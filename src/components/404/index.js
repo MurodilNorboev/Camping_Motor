@@ -1,11 +1,11 @@
 import React from 'react'
-import img from '../../assets/original2.jpeg'
-import '../stye.css'
+import '../404/style.css'
+import original from '../../assets/original2.jpeg'
 
-const NotFaundComponent = () => {
+const NotFileComponent = () => {
   return (
-    <div className='NotFaund'><img src={img} alt='404'style={{width: "100vw" }}/></div>
+    <div className='conainer-img'><img src={original}/></div>
   )
 }
 
-export default NotFaundComponent
+export default NotFileComponent
