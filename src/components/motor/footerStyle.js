@@ -60,17 +60,33 @@ justify-content: center;
 } .footer-mini-con-img-2 {
     display: flex;
     gap: 2px;
+} .footer-mini-con-0-1 {
+        display:none;
+} .footer-mini-con-img-2 {
+    display: none;
 }
 
 @media only screen and (max-width: 847px) {
-    .MiniMidlCon {
+    .footer-menus {
         display: flex;
+    } .footer-mini-con-0 {
+        display: none;
+    } .footer-mini-con {
+        display: none;
     } .footer-mini-con-img-2 {
     display: flex;
-    } .footer-menus {
-        display: none;
     } .footer-mini-con-0-1 {
         display: flex;
     } 
+} 
+
+@media only screen and (max-width: 847px) {
+    .footer-menus {
+        display: flex;
+        align-items: flex-start;
+    } .footer-mini-con-img-2 {
+        display: flex;
+        padding-top: 24opx;
+    }
 }
 `;

@@ -35,6 +35,7 @@ const Motorcomponent = () => {
       </Bacfon>
 
       <MiniMidlCon>
+
          <Leftmenu className='Leftmenu'>
           <Leftmenus>
             <div className='menus-Wrapper'>Cost of car</div>
@@ -139,13 +140,13 @@ const Motorcomponent = () => {
 
 
           
-            <Menus className='menus a'>
+            <Menus className='a'>
               <div><img src={car1}/></div>
               <div className='Menus-and'>
               <h4>Name of the car</h4>
               <h5 className='Brand'>Brand name <h5><img src={stark}/>5.3</h5></h5>
               <h2>250 $</h2>
-              <ButtonWrap>
+              <ButtonWrap className='ButtonWrap'>
                 <ButtonTo>Order</ButtonTo>
                 <ButtonTo $second>Compare</ButtonTo>
               </ButtonWrap>
@@ -385,11 +386,14 @@ const Motorcomponent = () => {
 
           </RightMenu>
          </RightMenuWrapper>
+
       </MiniMidlCon>
 
       <FooterContainer className='FooterContainer'> 
-      <div className='footer-mini-con-0-1'><h1>Logo</h1></div>
+     
+
         <div className='footer-menus'>
+        <div className='footer-mini-con-0-1'><h1>Logo</h1></div>
         <div className='footer-mini-con-0'><h1>Camper</h1></div>
           <div className='footer-mini-con'>
           <h2>Services</h2>
@@ -422,12 +426,13 @@ const Motorcomponent = () => {
           <h3>(021) 345-6789-99</h3>
         </div>
         </div>
-        </div>
         <div className='footer-mini-con-img-2'>
             <img src={Youtube}/>
             <img src={Instagram}/>
             <img src={Naver}/>
           </div>
+        </div>
+       
       </FooterContainer>
 
     </BigContainer>

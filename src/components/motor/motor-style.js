@@ -13,10 +13,9 @@ width: 100%;
 
 
 export const MiniMidlCon = styled.div`
-height: 1804px;
 display: flex;
-padding-top: 60px;
-
+height: 100%;
+padding-top: 50px;
  .navbar-menus-7 img{
     display: none;
 } 
@@ -88,13 +87,13 @@ height: 36px;
 `;
 
 export const Leftmenu = styled.div`
-height: 1353.76px;
 flex: 1.2;
 width: 250px;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: flex-start;
+gap: 18px;
 `;
 export const Leftmenus = styled.div`
 width: 240px;
@@ -170,12 +169,11 @@ border: none;
 `;
 
 export const RightMenuWrapper = styled.div`
-height: 1687px;
 flex: 3;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 `;
 
 export const RightNavbar = styled.div`
@@ -295,9 +293,10 @@ border-bottom: 1px solid #37373780;
 export const RightMenu = styled.div`
 display: grid;
 grid-template-areas: " a a a a ";
-align-items: flex-start;
-justify-content: space-around;
-height: 1615px;
+align-items: center;
+justify-content: space-evenly;
+gap: 30px 0px;
+padding: 20px 0px;
 width: 100%;
 `;
 export const Menus = styled.div`
@@ -345,11 +344,16 @@ export const ButtonTo = styled.button`
 border: 1px solid #006DAB;
 color: #006DAB;
 border-radius: 10px;
+background-color: white;
 width: 90px;
 height: 35px;
 font-family: Montserrat;
 font-size: 14px;
 font-weight: 700;
+cursor: pointer;
+.ButtonTo {
+    background-color: #006DAB;
+}
 `;
 export const ButtonWrap = styled.div`
  display: flex;
