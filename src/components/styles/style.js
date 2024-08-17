@@ -12,10 +12,12 @@ export const Conainer = styled.div`
 @media only screen and (max-width: 834px) {
   .container {
     display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
   } .MenuWrapper {
     display: none;
   } .Logowrapper {
-    flex: 2;
+    flex: 3;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -24,16 +26,19 @@ export const Conainer = styled.div`
     display: flex;
   }
 }
-@media only screen and (max-width: 414px) {
-  .Conatiner {
-    display: flex; 
-  } .menu-Icon {
+@media only screen and (max-width: 500px){
+  .menu-Icon {
     display: none;
   } .menu-Icon-mobil {
     display: flex;
   } .IconWrapper {
     display: none;
   }
+}
+@media only screen and (max-width: 424px) {
+  .Conatiner {
+    display: flex; 
+  } 
 }
 `;
 

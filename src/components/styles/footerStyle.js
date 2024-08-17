@@ -89,4 +89,9 @@ justify-content: center;
         padding-top: 24opx;
     }
 }
+@media only screen and (max-width: 847px) {
+    .footer-mini-con-img-2 {
+        padding-top: 25px;
+    }
+}
 `;

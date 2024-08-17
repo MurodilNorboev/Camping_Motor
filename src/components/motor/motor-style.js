@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const BigContainer = styled.div`
 width: 100%;
-
 .footer-mini-con-img-2 {
     display: none;
 } .footer-mini-con-0-1 {
@@ -14,13 +13,15 @@ width: 100%;
 
 export const MiniMidlCon = styled.div`
 display: flex;
+justify-content: center;
 height: 100%;
 padding-top: 50px;
+gap: 50px;
  .navbar-menus-7 img{
     display: none;
 } 
 
-@media only screen and (max-width: 1230px){
+@media only screen and (max-width: 1320px){
     .MiniMidlCon {
         display: flex;
     } .Leftmenu {
@@ -48,18 +49,24 @@ padding-top: 50px;
     } .RightMenu {
         display: grid;
         grid-template-areas: " a a ";
-    } 
+    } .RightNavbar {
+        display: flex;
+        gap: 10px;
+    }
 } 
 
 @media only screen and (max-width: 638px){
     .MiniMidlCon {
         display: flex;
     } .RightNavbar {
+        border: 2px solid red;
         display: grid;
         grid-template-rows: " a a ";
         place-items:unset;
-        width: 390px;
+        width: 100%;
         height: 90px;
+        padding: 0px;
+        margin: 0px;
     } .navbar-menus-7 img {
         display: flex;
         width: 200px;
@@ -71,29 +78,37 @@ padding-top: 50px;
     }  
 }
 
-@media only screen and (max-width: 420px) {
-    .MiniMidlCon {
-        display: flex;
-    } .RightNavbar {
-        display: flex;
-        flex-direction: column;
-    } 
-}
 `;
 export const NavbarMenul = styled.div` 
 display: flex;
-flex: 1;
 height: 36px;
 `;
 
 export const Leftmenu = styled.div`
-flex: 1.2;
+
 width: 250px;
 display: flex;
 flex-direction: column;
-align-items: center;
 justify-content: flex-start;
 gap: 18px;
+.leftMenu2{
+    display: flex;
+    margin-top: -90px;
+    flex-direction: column;
+    width: 240px;
+    height: 149px;
+} .Comparelang {
+    width: 62px;
+    height: 19px;
+    color: #006DAB;
+    margin: 5px 9px;
+} .mini-car {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 241px;
+}
 `;
 export const Leftmenus = styled.div`
 width: 240px;
@@ -108,11 +123,12 @@ justify-content: flex-start;
     justify-content: flex-start;
     border-bottom: 1px solid #3737374D;
     margin-bottom: 30px;
-    padding: 7px 0px;
+    padding: 6.6px 0px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
     width: 100%;
+    padding-bottom: 15px;
     color: #000000;
 } .input-wrapper-1 {
     display: flex;
@@ -144,32 +160,26 @@ justify-content: flex-start;
     height: 19px;
     color: #006DAB;
     margin: 5px 9px;
-}
-`;
-
-export const ButtonWrapper = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-width: 240px;
-height: 155px;
-.button-wrapper {
+} 
+// button
+.leftMenu1 {
+    width: 100%;
+    height: 39.968px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-} button {
-    cursor: pointer;
+} .butwrap0 {
+    height: 39.968px;
+} .butwrap :hover {
+    background-color: ${(props)=> (props.$second ? "var(--blue, #016097)" : "var(--sariq, #d76800)")};
+} .butwrap0 :hover {
+    background-color:  var(--blue, #016097);
 }
-`;
-export const Minibutton = styled.button`
-padding: ${(props) => (props.$second ? "10px 30px" : "10px 30px")};
-background-color: ${(props) => (props.$second ? " #006DAB" : "#FF7A00")};
-border-radius: 60px;
-border: none;
+
 `;
 
+
 export const RightMenuWrapper = styled.div`
-flex: 3;
+
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -183,8 +193,8 @@ justify-content: space-between;
 height: 36px;
 width: 1000px;
 border-bottom: 1px solid #37373780;   
-
-
+padding-bottom: 15px;
+margin-top: 8px;
 .navbar-menus {
     display: flex;
     align-items: center;
@@ -225,7 +235,6 @@ border-bottom: 1px solid #37373780;
     padding-left: 10px;
 } .navbar-menus-3 {
     display: flex;
-    border: 1px solid #3737374D;
     border-radius: 5px;
     width: 80px;
     height: 30px;
@@ -276,7 +285,7 @@ border-bottom: 1px solid #37373780;
     width: 30px;
     border: 1px solid #3737374D;
     border-radius: 0px 5px 5px 0px;
-    margin-left: -34px;
+    margin-left: -35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +294,17 @@ border-bottom: 1px solid #37373780;
     align-items: center;
     justify-content: center;
 } 
-
+@media only screen and (max-width: 420px) {
+    .MiniMidlCon {
+        display: flex;
+    } .RightNavbar {
+        display: grid;
+        grid-template-rows: " a a ";
+        place-items:unset;
+        width: 100%;
+        height: 90px;
+    } 
+}
 `;
 
 
@@ -294,72 +313,13 @@ export const RightMenu = styled.div`
 display: grid;
 grid-template-areas: " a a a a ";
 align-items: center;
-justify-content: space-evenly;
-gap: 30px 0px;
+justify-content: center;
+gap: 30px 30px;
 padding: 20px 0px;
 width: 100%;
 `;
-export const Menus = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-width: 223px;
-height: 307px;
-padding: 5px 10px;
-border-radius: 20px;
-box-shadow:
-      0 0 0 2px white,
-      0em 0em 0.5em rgba(123, 111, 111, 0.6);
 
 
-.Menus-and {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 130px;
-    width: 100%;
-} .Brand {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-} .Menus-and h4 {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 600;
-} .Menus-and h5 {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-} .Menus-and h2 {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 700;
-    color: #006DAB;
-} 
-`;
-
-export const ButtonTo = styled.button`
-border: 1px solid #006DAB;
-color: #006DAB;
-border-radius: 10px;
-background-color: white;
-width: 90px;
-height: 35px;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 700;
-cursor: pointer;
-.ButtonTo {
-    background-color: #006DAB;
-}
-`;
-export const ButtonWrap = styled.div`
- display: flex;
-    width: 100%;
-    justify-content: space-between;
-`;
 
 
 
