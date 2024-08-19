@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Leftmenu, BigContainer, MiniMidlCon,  RightMenuWrapper, RightNavbar, Leftmenus,  NavbarMenul, } from './motor-style'
 import { Bacfon, Bacmenu } from './bacStyle'
 import miniImg1 from '../../assets/moto1.svg'
@@ -9,15 +9,21 @@ import minimenu2 from '../../assets/menu2.svg'
 import icon1 from '../../assets/iconpastle.svg'
 import icon2 from '../../assets/iconpastle.svg'
 import { RightMenu } from './motor-style'
-import { Button1, CarWrapper } from './style00'
-import { Link } from 'react-router-dom'
-import stark from '../../assets/stark.svg'
-import { campcar } from '../mock/motor'
 import { ButtonA } from '../caravan/style01'
+import UstateComponent from './ustates_menu/ustate'
+import UstatetrumenuComponent from './ustates_menu/ustatetrumenu'
 
 const Motorcomponent = () => {
-  const data = campcar.maindata;
-  console.log(data)
+
+  const [active, setActive] = useState(true);
+
+  function handleClick() {
+    setActive(true);
+  }
+  function handleSetClick(){
+    setActive(false);
+  }
+
   return (
     <BigContainer><div className='navbar-2'></div>
       <Bacfon className='bac-img'>
@@ -27,7 +33,8 @@ const Motorcomponent = () => {
           <h2>Motors</h2>
         </Bacmenu>
       </Bacfon>
-      <MiniMidlCon>
+      <MiniMidlCon className='MiniMidlCon'>
+
          <Leftmenu className='Leftmenu'>
           <Leftmenus>
             <div className='menus-Wrapper'>Cost of car</div>
@@ -94,13 +101,14 @@ const Motorcomponent = () => {
          </Leftmenu>
 
          <RightMenuWrapper>
+          
           <RightNavbar className='RightNavbar'> 
             
           <NavbarMenul className='NavbarMenul'>
             <div className='navbar-menus-1'><h2>Item</h2><h3>25.156</h3></div>
 
             <div  className='navbar-menus-7'>
-                <img src={minimenu1} alt='mini-menu1'/>
+                <div className='navbar-menus-9'><img src={minimenu1} alt='mini-menu1'/></div>
                 <div className='navbar-menus-5'><img src={minimenu2} alt='mini-menu2'/></div>
               </div>
 
@@ -112,8 +120,6 @@ const Motorcomponent = () => {
                 <input type='text' placeholder='Select'/> 
                 <div className='input-pastle'><img src={icon1} alt='icon1'/></div>
               </div>
-
-              
               <div  className='navbar-menus-3'>
                 <input type='text' placeholder='60'/><div>
                 <div className='input-pastle01'><img src={icon2} alt='icon1'/></div>
@@ -122,37 +128,17 @@ const Motorcomponent = () => {
               </div>
 
               <div  className='navbar-menus-4'>
-                <img src={minimenu1} alt='mini-menu1'/>
-                <div className='navbar-menus-5'><img src={minimenu2} alt='mini-menu2'/></div>
-              </div>
 
+               <div className='navbar-menus-9' onClick={handleClick}> <img src={minimenu1} alt='mini-menu1'/></div>
+               <div className='navbar-menus-5' onClick={handleSetClick}> <img src={minimenu2} alt='mini-menu2'/></div>
+               
+            </div>
             </div>
           </RightNavbar>
 
-          <RightMenu className='RightMenu'>
-           {data.map((value, index)=> {
-              return(
-                <div key={index}>
-                  <Link  to={`/motor/${value.id}`}
-                  style={{textDecoration: "none", color: "black"}}>
-                <CarWrapper>
-                <div className='bottom'>
-                  <img className='Car0' src={value.car.img} alt="car" />
-                <h3> {value.car.CarName} </h3>
-                <h5>{value.car.BrandName} <img src={stark} alt="stark" />5.3</h5>
-                <h2>{value.car.Cost}</h2>
-                <div className='Button0'>
-                  <Button1>Order</Button1><Button1 $second>Camper</Button1>
-                </div>
-                </div>
-                </CarWrapper>
-                </Link>
-                </div>
-              )
-            })}
-            </RightMenu>
+          {active ? <UstatetrumenuComponent/> : <UstateComponent/>} 
 
-         </RightMenuWrapper>
+          </RightMenuWrapper>
 
       </MiniMidlCon>
     </BigContainer>

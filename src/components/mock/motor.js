@@ -9,6 +9,9 @@ export const campcar = {
             CarName: "Name of the car",
             BrandName: "Brand Name",
             Cost: "250 $",
+            company: "Aidal company",
+            place: "12",
+            license: "License type"
         }
     },
     {
@@ -78,6 +81,7 @@ export const campcar = {
         id:9,
         car: {
             img: "https://pngimg.com/d/caravan_PNG57.png",
+            CarName: "Name of the car",
             BrandName: "Brand Name",
             Cost: "250 $",
         }
@@ -86,6 +90,7 @@ export const campcar = {
         id:10,
         car: {
             img: "https://pngimg.com/uploads/caravan/small/caravan_PNG96.png",
+            CarName: "Name of the car",
             BrandName: "Brand Name",
             Cost: "250 $",
         }
@@ -130,6 +135,7 @@ export const campcar = {
         id:15,
         car: {
             img: "https://pngimg.com/d/caravan_PNG46.png",
+            CarName: "Name of the car",
             BrandName: "Brand Name",
             Cost: "250 $",
         }

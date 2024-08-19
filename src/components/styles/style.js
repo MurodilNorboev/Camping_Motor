@@ -9,6 +9,7 @@ export const Conainer = styled.div`
   position: fixed;
   width: 100%;
   background-color: white;
+  
 @media only screen and (max-width: 834px) {
   .container {
     display: flex;

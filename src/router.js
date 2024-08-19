@@ -8,6 +8,8 @@ import CaravanComponent from './components/caravan/caravan'
 import TuningComponent from './components/tuning/tuning'
 import UsedCarComponent from './components/used-Car/usedCar'
 import DatailCaravam from './components/caravan/datailCaravam'
+import UstateComponent from './components/motor/ustates_menu/ustate'
+import UstatetrumenuComponent from './components/motor/ustates_menu/ustatetrumenu'
 
 
 
@@ -18,6 +20,8 @@ const RouterComponent = () => {
   <Routes>
     <Route path='/motor' element={<Motorcomponent/>}/>
     <Route path='/motor/:id' element={<Datailmotor/>}/>
+    <Route path='/test' element={<UstatetrumenuComponent/>}/>
+    <Route path='/test' element={<UstateComponent/>}/>
     <Route path='/caravan' element={<CaravanComponent/>}/>
     <Route path='/caravan/:id' element={<DatailCaravam/>}/>
     <Route path='/tuning' element={<TuningComponent />}/>

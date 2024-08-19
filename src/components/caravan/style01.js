@@ -96,28 +96,6 @@ display: none;
         padding: 0px 30px;
     } 
 } 
-/* @media only screen and (max-width: 640px) {
-      .RihtNavbarCon {
-        display: grid;
-        grid-template-rows: " a a ";
-        width: 100%;
-        height: 90px;
-    } .navbar-menus-7 img {
-        display: flex;
-    } .navbar-menus-4 {
-        display: none;
-    } .navbar-menus-4 img {
-        display: none;
-    } 
-}
-@media only screen and (max-width: 500px) {
-      .RihtNavbarCon {
-        display: grid;
-        grid-template-rows: " a a ";
-        width: 100%;
-        height: 90px;
-    } 
-} */
 `;
 //LefCon
 export const LeftCon = styled.div`
@@ -265,7 +243,6 @@ justify-content: center;
         width: 100%;
         height: 90px;
         padding: 0px;
-        margin: 0px;
     } .navbar-menus-4 img{
        display: none;
     } .navbar-menus-7 img {

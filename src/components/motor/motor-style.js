@@ -15,9 +15,9 @@ export const MiniMidlCon = styled.div`
 display: flex;
 justify-content: center;
 height: 100%;
-padding-top: 50px;
 gap: 50px;
- .navbar-menus-7 img{
+padding-top: 50px;
+ .navbar-menus-7 div {
     display: none;
 } 
 
@@ -59,7 +59,6 @@ gap: 50px;
     .MiniMidlCon {
         display: flex;
     } .RightNavbar {
-        border: 2px solid red;
         display: grid;
         grid-template-rows: " a a ";
         place-items:unset;
@@ -73,9 +72,11 @@ gap: 50px;
     } .RightMenu {
         display: grid;
         grid-template-areas: " a ";
-    }  .navbar-menus-4 img{
+    } .navbar-menus-4 div{
         display: none;
-    }  
+    } .navbar-menus-7 div {
+        display: flex;
+    } 
 }
 
 `;
@@ -176,8 +177,7 @@ justify-content: flex-start;
 }
 
 `;
-
-
+// menus wrapper
 export const RightMenuWrapper = styled.div`
 
 display: flex;
@@ -185,7 +185,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 `;
-
+// right navbar
 export const RightNavbar = styled.div`
 display: flex;
 align-items: center;
@@ -251,35 +251,40 @@ margin-top: 8px;
     border: 1px solid #3737374D;
     border-radius: 0px 5px 5px 0px;
     margin-left: -30px;
+} .navbar-menus-4 img {
+    width: 40px;
+    height: 30px;
 } .navbar-menus-4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
-} .navbar-menus-4 img {
+} .navbar-menus-9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #3737374D;
+    width: 40px;
+    height: 30px;
     border-radius: 5px 0px 0px 5px;
-    width: 40px;
-    height: 30px;
-} .navbar-menus-7 img {
-    border: 1px solid #3737374D;
-    border-radius: 5px 0px 0px 5px;
-    width: 40px;
-    height: 30px;
-} .navbar-menus-5 img {
-    width: 40px;
-    height: 30px;
-    border-radius: 0px 5px 5px 0px;
-    margin-left: -1px;
 } .navbar-menus-5 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #3737374D;
+    margin-left: -1px;
+    width: 40px;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+} .navbar-menus-9 img {
+    width: 20px;
+    height: 20px;
+} .navbar-menus-5 img {
+    width: 20px;
+    height: 20px;
 } .navbar-menus-6 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 150px;
 } .input-pastle img {
     height: 30px;
     width: 30px;
@@ -293,7 +298,11 @@ margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+    padding-right: 5px;
+} .navbar-menus-7 img {
+    width: 40px;
+    height: 30px;
+}
 @media only screen and (max-width: 420px) {
     .MiniMidlCon {
         display: flex;
@@ -306,9 +315,7 @@ margin-top: 8px;
     } 
 }
 `;
-
-
-
+// right menus
 export const RightMenu = styled.div`
 display: grid;
 grid-template-areas: " a a a a ";
@@ -319,7 +326,87 @@ padding: 20px 0px;
 width: 100%;
 `;
 
-
+// ustate
+export const RightNavbarRow = styled.div`
+display: grid;
+grid-template-areas: " i ";
+align-items: center;
+justify-content: center;
+padding: 20px 0px;
+width: 100%;
+row-gap: 20px;
+`;
+export const Lengmenus = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 955px;
+    height: 180px;
+    padding: 0px 40px 0px 18px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+    .menu-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+    } .to-wrap {
+        display: flex;
+        width: 100%;
+        padding-right: 10px;
+        justify-content: space-between;
+    } .menu-wrap h3 {
+        color: var(--text, #373737);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 32px;
+    } .menu-wrap h2 {
+        color: var(--blue, #006DAB);
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 700;
+        padding-top: 28px;
+    } .menu-wrap h5 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: var(--text, #373737);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 5px;
+    } .Button0 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 100%;
+        gap: 14.68px;
+    } .Car0 {
+    width: 280px;
+    height: 143.853px;
+    padding-right: 40px;
+}
+.Button0 :hover{
+    background-color:  #006DAB;
+    color: white;
+}
+`;
+export const ButtonBig = styled.button`
+    width: 291.325px;
+    height: 35px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #006DAB;
+    border: 1px solid var(--blue, #006DAB);
+    cursor: pointer;
+.ButtonBig :hover {
+    background-color:  #006DAB;
+}
+`;
 
 
 
