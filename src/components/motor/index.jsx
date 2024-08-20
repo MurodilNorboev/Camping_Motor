@@ -108,8 +108,8 @@ const Motorcomponent = () => {
             <div className='navbar-menus-1'><h2>Item</h2><h3>25.156</h3></div>
 
             <div  className='navbar-menus-7'>
-                <div className='navbar-menus-9'><img src={minimenu1} alt='mini-menu1'/></div>
-                <div className='navbar-menus-5'><img src={minimenu2} alt='mini-menu2'/></div>
+            <div className='navbar-menus-9' onClick={handleClick}> <img src={minimenu1} alt='mini-menu1'/></div>
+            <div className='navbar-menus-5' onClick={handleSetClick}> <img src={minimenu2} alt='mini-menu2'/></div>
               </div>
 
               </NavbarMenul>
@@ -131,7 +131,7 @@ const Motorcomponent = () => {
 
                <div className='navbar-menus-9' onClick={handleClick}> <img src={minimenu1} alt='mini-menu1'/></div>
                <div className='navbar-menus-5' onClick={handleSetClick}> <img src={minimenu2} alt='mini-menu2'/></div>
-               
+
             </div>
             </div>
           </RightNavbar>

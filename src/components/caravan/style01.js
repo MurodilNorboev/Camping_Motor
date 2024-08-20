@@ -53,11 +53,17 @@ box-shadow:
     font-weight: 600;
     padding-bottom: 5px;
 } .bottom h5 {
+    justify-content: space-between;
+    display: flex;
     color: var(--text, #373737);
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
     padding-bottom: 18px;
+} .bottom h4 {
+    display: flex;
+    align-items: center;
+    gap: 3px;
 } .bottom h2 {
     color: var(--blue, #006DAB);
     font-family: Montserrat;

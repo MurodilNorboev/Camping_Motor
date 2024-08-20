@@ -6,7 +6,7 @@ import MidlComponent from './midl'
 const CaravanComponent = () => {
   return (
      <CaravanCon>
-      < Bacfon className='bac-img'>
+      < Bacfon className='bac-imgcaravan'>
       <BacmenuCaravan>
       <Bacmenu>
           <h5>Home / Motors</h5>

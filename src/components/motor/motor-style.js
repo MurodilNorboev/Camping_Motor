@@ -302,7 +302,7 @@ margin-top: 8px;
 } .navbar-menus-7 img {
     width: 40px;
     height: 30px;
-}
+} 
 @media only screen and (max-width: 420px) {
     .MiniMidlCon {
         display: flex;
@@ -335,16 +335,35 @@ justify-content: center;
 padding: 20px 0px;
 width: 100%;
 row-gap: 20px;
+.tuzatish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} 
+@media only screen and (max-width: 960px) {
+    .Lengmenus {
+        display: grid;
+        grid-template-areas: " a ";
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        padding-right: 0px;
+        padding-left: 0px; 
+        padding-bottom: 10px;
+    } 
+}
 `;
 export const Lengmenus = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 955px;
-    height: 180px;
+    max-width: 1000px;
+    width: 130vmin;
+    min-width: 100px;
     padding: 0px 40px 0px 18px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+
     .menu-wrap {
         display: flex;
         flex-direction: column;
@@ -353,7 +372,6 @@ export const Lengmenus = styled.div`
     } .to-wrap {
         display: flex;
         width: 100%;
-        padding-right: 10px;
         justify-content: space-between;
     } .menu-wrap h3 {
         color: var(--text, #373737);
@@ -391,9 +409,17 @@ export const Lengmenus = styled.div`
     background-color:  #006DAB;
     color: white;
 }
+@media only screen and (max-width: 850px){
+    .Button0 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
 `;
 export const ButtonBig = styled.button`
-    width: 291.325px;
+    width: 40vmin;
+    max-width: 340px;
     height: 35px;
     display: flex;
     background-color: white;

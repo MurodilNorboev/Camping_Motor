@@ -5,11 +5,12 @@ import CampingPlaseComponent from './components/camping-Plase/campingPlase'
 import NotFileComponent from './components/404'
 import Datailmotor from './components/motor/datail'
 import CaravanComponent from './components/caravan/caravan'
-import TuningComponent from './components/tuning/tuning'
 import UsedCarComponent from './components/used-Car/usedCar'
 import DatailCaravam from './components/caravan/datailCaravam'
 import UstateComponent from './components/motor/ustates_menu/ustate'
 import UstatetrumenuComponent from './components/motor/ustates_menu/ustatetrumenu'
+import AComponent from './components/btuning/atuning'
+
 
 
 
@@ -24,7 +25,7 @@ const RouterComponent = () => {
     <Route path='/test' element={<UstateComponent/>}/>
     <Route path='/caravan' element={<CaravanComponent/>}/>
     <Route path='/caravan/:id' element={<DatailCaravam/>}/>
-    <Route path='/tuning' element={<TuningComponent />}/>
+    <Route path='/btuning' element={<AComponent/>}/>
     <Route path='/used-Car' element={<UsedCarComponent />}/>
     <Route path='/camping-Plase' element={<CampingPlaseComponent />}/>
     <Route path='*' element={<NotFileComponent />}/>

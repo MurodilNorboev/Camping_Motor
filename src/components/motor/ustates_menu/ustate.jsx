@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { ButtonBig, Lengmenus, RightNavbarRow } from '../motor-style'
+import { ButtonBig, Lengmenus, RightNavbarRow,  } from '../motor-style'
 import { campcar } from '../../mock/motor'
 import { Link } from 'react-router-dom';
-import { Button1 } from '../style00';
 import stark from '../../../assets/stark.svg'
 
 const UstateComponent = () => {
@@ -15,7 +14,8 @@ const UstateComponent = () => {
             <div key={index}>
                 <Link to={`/motor/${value.id}`}
                 style={{textDecoration:"none",color:"black"}}>
-                <Lengmenus>
+                  <div className='tuzatish'>
+                <Lengmenus className='Lengmenus'>
                     <img className='Car0' src={value.car.img} alt="car-img" />
                     <div className='menu-wrap'>
                     <div className='to-wrap'><h3> {value.car.CarName}</h3> <h2>{value.car.Cost}</h2></div>
@@ -25,6 +25,7 @@ const UstateComponent = () => {
                     </div>
                     </div>
                 </Lengmenus>
+                </div>
                 </Link>
             </div>
         )

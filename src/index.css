@@ -27,3 +27,35 @@ code {
   width: 100%;
   ;
 }
+.bac-imgcaravan {
+  background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://st4.depositphotos.com/1000647/21154/i/450/depositphotos_211542644-stock-photo-family-vacation-travel-holiday-trip.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.bac-imgTuning {
+  background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdnb.artstation.com/p/assets/images/images/075/546/101/large/houssem-douik-render-7.jpg?1714836501);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.bac-imgUsed-Car {
+  background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://res.cloudinary.com/hqxyevlf6/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/uka55t2lmhbnfrqfqiyi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.bac-imgCamping-Plase {
+  background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(./assets/CampingImg4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
