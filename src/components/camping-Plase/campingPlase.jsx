@@ -2,8 +2,12 @@ import React from 'react'
 import { BacmenuCamPles, CamPlaseCon, CampingCon } from './camplsStyle'
 import { Bacfon } from '../motor/bacStyle'
 import campingimg1 from '../../assets/CampingImg4.jpg'
+import { campingimg } from '../mock/campingdata'
+import { Link } from 'react-router-dom'
 
 const CampingPlaseComponent = () => {
+  const campingdata = campingimg.mainCamping;
+  console.log(campingdata);
   return (
     <CamPlaseCon>
       < Bacfon className='bac-imgCamping-Plase'>
@@ -13,13 +17,24 @@ const CampingPlaseComponent = () => {
           <h2> Camping Places</h2>
       </BacmenuCamPles>
       </Bacfon>
-      <CampingCon>
-        <div className="imgCon">
-          <img src={campingimg1} alt="camping-img" />
-          <h2>Camping Place Name</h2>
-          <h4>Location</h4>
-        </div>
+
+      <CampingCon className='CampingCon'>
+        {campingdata.map((value, index) => {
+          return(
+            <div key={index}>
+              <Link to={`/camping-Place/${value.id}`}
+              style={{textDecoration:'none',color:'black'}}>
+                <div className="imgCon">
+                  <img src={value.campimg.img} alt="camping-img" />
+                  <h2>{value.campimg.campingName}</h2>
+                  <h4>{value.campimg.location}</h4>
+                </div>
+              </Link>
+            </div>
+          )
+        })}
       </CampingCon>
+
     </CamPlaseCon>
   )
 }

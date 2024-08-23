@@ -1,13 +1,27 @@
 import React from 'react'
-import { FooterContainer } from '../styles/footerStyle'
+
 import Youtube from '../../assets/youtube.svg'
 import Instagram from '../../assets/instagram.svg'
 import Naver from '../../assets/naver.svg'
-
+import { Footerd } from '../styles/FoterStyle'
+import { Experimental_CssVarsProvider as CssVarsProvider } from '@mui/material/styles';
+import { useLocation } from 'react-router-dom'
+import { Box, CssBaseline } from '@mui/material'
 const Footer = () => {
+
+//   const location = useLocation();
+// const hideSidebar = location.pathname === "/login";
+
+
   return (
     <div>
-        <FooterContainer className='FooterContainer'> 
+            {/* <CssVarsProvider disaableTransitionOnChange>
+      <CssBaseline/>
+      <Box sx={{display: "none"}}>
+        {/* {!hideSidebar && <Navbar/>} */}
+        {/* {!hideSidebar && <Footer/>}  */}
+
+        <Footerd className='FooterContainer'> 
      
 
      <div className='footer-menus'>
@@ -51,7 +65,9 @@ const Footer = () => {
        </div>
      </div>
     
-   </FooterContainer>
+       </Footerd>
+       {/* </Box>
+       </CssVarsProvider> */}
     </div>
   )
 }

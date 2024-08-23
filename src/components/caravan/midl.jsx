@@ -1,6 +1,5 @@
-import React from 'react'
-import { CarConWrapper, LeftCon, MidlCon, NavbarMenul, NewLink, RightCon, RightMenu, RightMenuWrapper, RihtNavbarCon } from './style01';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { LeftCon, MidlCon, NavbarMenul,  RightCon, RightMenuWrapper, RihtNavbarCon } from './style01';
 import miniImg1 from '../../assets/moto1.svg'
 import miniImg2 from '../../assets/moto2.svg'
 import miniImg3 from '../../assets/moto3.svg'
@@ -8,18 +7,30 @@ import minimenu1 from '../../assets/menu1.svg'
 import minimenu2 from '../../assets/menu2.svg'
 import icon1 from '../../assets/iconpastle.svg'
 import icon2 from '../../assets/iconpastle.svg'
-import { caravanCar } from '../mock/caravandata';
 import pastle from '../../assets/iconpastle.svg'
 import { ButtonA } from './style01';
-import stark from '../../assets/stark.svg'
-import { Button1 } from '../motor/style00';
+import Hmenu from './utatemanuc/hmenu';
+import Vmenu from './utatemanuc/vmenu';
 
 
 
 
-const MidlComponent = () => {
-    const dataCaravan = caravanCar.mainCon;
-    console.log(dataCaravan)
+
+
+const  MidlComponent = () => {
+
+    const [active, setActive] = useState(true);
+
+    function handleClick() {
+      setActive(true);
+    }
+    function handleSetClick(){
+      setActive(false);
+    }
+
+
+
+
   return (
     <MidlCon className='MidlCon'>
         <LeftCon className="left-Con">
@@ -134,6 +145,7 @@ const MidlComponent = () => {
               </NavbarMenul>
 
             <div className='navbar-menus'>
+
               <div className='navbar-menus-2'>
                 <h3>sort by</h3>
                 <input type='text' placeholder='Select'/> 
@@ -149,36 +161,15 @@ const MidlComponent = () => {
               </div>
 
               <div  className='navbar-menus-4'>
-                <img src={minimenu1} alt='mini-menu1'/>
-                <div className='navbar-menus-5'><img src={minimenu2} alt='mini-menu2'/></div>
+                <div className='navbar-menus-05' onClick={handleClick}><img src={minimenu1} alt='mini-menu1'/></div>
+                <div className='navbar-menus-5' onClick={handleSetClick}><img src={minimenu2} alt='mini-menu2'/></div>
               </div>
 
             </div>
 
           </RihtNavbarCon>
-
-          <RightMenu className='RightMenu'>
-            {dataCaravan.map((value, index) => {
-                return(
-                    <div key={index}>
-                        <Link to={`/caravan/${value.id}`}
-                        style={{textDecoration:'none',color:"black"}}>
-                            <CarConWrapper>
-                            <div className='bottom'>
-                  <img className='Car0' src={value.car.img} alt="car" />
-                <h3> {value.car.CarName} </h3>
-                <h5>{value.car.BrandName} <h4><img src={stark} alt="stark" />5.3</h4></h5>
-                <h2>{value.car.Cost}</h2>
-                <div className='Button0'>
-                  <Button1>Order</Button1><Button1 $second>Camper</Button1>
-                </div>
-                </div>
-                            </CarConWrapper>
-                        </Link>
-                    </div>
-                )
-            })}
-          </RightMenu>
+          
+          {active ? <Hmenu/> : <Vmenu/>}
 
          </RightMenuWrapper>
 

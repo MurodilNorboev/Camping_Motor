@@ -1,5 +1,5 @@
 import React from 'react'
-import { DatailConCaravan } from '../styles/caravanDatailStylE'
+import { DatailConUsedCar } from './usedCardatailStyle'
 import { Bacfon, Bacmenu, CarMenus, DatailMenu, ImgWrapCon } from '../styles/datail'
 import { useParams } from 'react-router-dom'
 import CarInterior1 from '../../assets/datailimg1.svg';
@@ -7,18 +7,18 @@ import CarInterior2 from '../../assets/datailimg2.svg';
 import CarInterior3 from '../../assets/datailimg3.svg';
 import CarInterior4 from '../../assets/datailimg4.svg';
 import CarInterior5 from '../../assets/datailimg5.svg';
-import { caravanCar } from '../mock/caravandata';
+import { usedcarCar } from '../mock/usedCardata'
 
-
-const DatailCaravan = () => {
-  const  {id} = useParams();
-  const  datas = caravanCar.mainCon;
-  const filtercaravan = datas.filter((value) => value.id === parseInt(id));
-  console.log(filtercaravan);
+const UsedDatail = () => {
+  const { id } = useParams();
+  const dataU = usedcarCar.usedCon;
+  const filterused = dataU.filter((value) => value.id === parseInt(id));
+  console.log(filterused);
   return (
-    <DatailConCaravan>
+    <DatailConUsedCar>
 
       <Bacfon className='bac-img'>
+
         <Bacmenu>
           <h2>Aidal</h2>
           <div className='ButWrap'> <button>ADD TO CART</button><button>COMPARE</button></div>
@@ -28,25 +28,22 @@ const DatailCaravan = () => {
       <div className="infowrapper">
 
       <CarMenus>
-        {filtercaravan.map((value, index) => {
+        {filterused.map((value, index) => {
           return(
             <div key={index}>
-             <DatailMenu className='DatailMenu'>
-              
-            <img className='Car0' src={value.car.img} alt="car1"  />
-
-            <div className='right-info2'>
-            <div className='right-info'>
-            <div className='info1'><h3>Aidal</h3><h2>{value.car.Cost}</h2></div>
-            <h5>Aid</h5>
-            <hr className='lang'/>
-            <div className='info'><h1>Company</h1><h4>{value.car.company}</h4></div>
-            <div className='info'><h1>People</h1><h4>{value.car.place}</h4></div>
-            <div className='info'><h1>License type</h1><h4>{value.car.license}</h4></div>
-            </div>
-            </div>
-
-             </DatailMenu>
+              <DatailMenu className='DatailMenu'>
+              <img className='Car0' src={value.car.img} alt="car1"  />
+              <div className='right-info2'>
+              <div className='right-info'>
+              <div className='info1'><h3>Aidal</h3><h2>{value.car.Cost}</h2></div>
+              <h5>Aid</h5>
+              <hr className='lang'/>
+              <div className='info'><h1>Company</h1><h4>{value.car.company}</h4></div>
+              <div className='info'><h1>People</h1><h4>{value.car.place}</h4></div>
+              <div className='info'><h1>License type</h1><h4>{value.car.license}</h4></div>
+              </div>
+              </div>
+              </DatailMenu> 
             </div>
           )
         })}
@@ -135,8 +132,9 @@ const DatailCaravan = () => {
      </div>
      </ImgWrapCon>
      </div>
-    </DatailConCaravan>
+
+    </DatailConUsedCar>
   )
 }
 
-export default DatailCaravan
+export default UsedDatail

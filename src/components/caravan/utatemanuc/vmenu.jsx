@@ -1,22 +1,20 @@
-
-import { campcar } from '../../mock/motor'
+import React from 'react'
+import { caravanCar } from '../../mock/caravandata'
+import { ButtonBig, Lengmenus, RightNavbarRow } from './styleHandV';
 import { Link } from 'react-router-dom';
 import stark from '../../../assets/stark.svg'
-import { ButtonBig, Lengmenus, RightNavbarRow } from '../style00';
 
-
-
-const UstateComponent = () => {
-    const data = campcar.maindata;
-    console.log(data);
+const Vmenu = () => {
+    const dataCaravan = caravanCar.mainCon;
+    console.log(dataCaravan);
   return (
     <RightNavbarRow>
-        {data.map((value, index) => {
+       {dataCaravan.map((value, index) => {
         return(
             <div key={index}>
-                <Link to={`/motor/${value.id}`}
-                style={{textDecoration:"none",color:"black"}}>
-                  <div className='tuzatish'>
+                <Link to={`/caravan/${value.id}`}
+                style={{textDecoration:'none',color:'black'}}>
+                <div className='tuzatish'>
                 <Lengmenus className='Lengmenus'>
                     <img className='Car0' src={value.car.img} alt="car-img" />
                     <div className='menu-wrap'>
@@ -31,11 +29,9 @@ const UstateComponent = () => {
                 </Link>
             </div>
         )
-    })
-
-        }
+       })}
     </RightNavbarRow>
   )
 }
 
-export default UstateComponent
+export default Vmenu

@@ -8,15 +8,17 @@ import CarInterior3 from '../../assets/datailimg3.svg';
 import CarInterior4 from '../../assets/datailimg4.svg';
 import CarInterior5 from '../../assets/datailimg5.svg';
 import { caravanCar } from '../mock/caravandata';
+import { DatailConTuning } from './datailstyle';
+import { tuningCar } from '../mock/tuningdata';
 
-
-const DatailCaravan = () => {
-  const  {id} = useParams();
-  const  datas = caravanCar.mainCon;
-  const filtercaravan = datas.filter((value) => value.id === parseInt(id));
-  console.log(filtercaravan);
+const DatailTuning = () => {
+  const { id }  = useParams();
+  const dataT = tuningCar.tuningCon;
+  const filterTuning = dataT.filter((value) => value.id === parseInt(id))
+  console.log(filterTuning);
   return (
-    <DatailConCaravan>
+    <DatailConTuning>
+
 
       <Bacfon className='bac-img'>
         <Bacmenu>
@@ -28,25 +30,22 @@ const DatailCaravan = () => {
       <div className="infowrapper">
 
       <CarMenus>
-        {filtercaravan.map((value, index) => {
+        {filterTuning.map((value, index) => {
           return(
             <div key={index}>
-             <DatailMenu className='DatailMenu'>
-              
-            <img className='Car0' src={value.car.img} alt="car1"  />
-
-            <div className='right-info2'>
-            <div className='right-info'>
-            <div className='info1'><h3>Aidal</h3><h2>{value.car.Cost}</h2></div>
-            <h5>Aid</h5>
-            <hr className='lang'/>
-            <div className='info'><h1>Company</h1><h4>{value.car.company}</h4></div>
-            <div className='info'><h1>People</h1><h4>{value.car.place}</h4></div>
-            <div className='info'><h1>License type</h1><h4>{value.car.license}</h4></div>
-            </div>
-            </div>
-
-             </DatailMenu>
+              <DatailMenu className='DatailMenu'>
+              <img className='Car0' src={value.car.img} alt="car1"  />
+              <div className='right-info2'>
+              <div className='right-info'>
+              <div className='info1'><h3>Aidal</h3><h2>{value.car.Cost}</h2></div>
+              <h5>Aid</h5>
+              <hr className='lang'/>
+              <div className='info'><h1>Company</h1><h4>{value.car.company}</h4></div>
+              <div className='info'><h1>People</h1><h4>{value.car.place}</h4></div>
+              <div className='info'><h1>License type</h1><h4>{value.car.license}</h4></div>
+              </div>
+              </div>
+              </DatailMenu>
             </div>
           )
         })}
@@ -135,8 +134,9 @@ const DatailCaravan = () => {
      </div>
      </ImgWrapCon>
      </div>
-    </DatailConCaravan>
+
+    </DatailConTuning>
   )
 }
 
-export default DatailCaravan
+export default DatailTuning

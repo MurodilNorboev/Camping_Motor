@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 
 
-export const Conainer = styled.div`
+export const Navbar = styled.div`
   padding: 20px;
   display: flex;
   position: fixed;
   width: 100%;
   background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
   
 @media only screen and (max-width: 834px) {
   .container {
@@ -71,6 +72,10 @@ export const IconWrapper = styled.div`
 display: flex;
 align-items: center;
 flex: 0.5;
+.login {
+  display: flex;
+  margin-right: 5px;
+}
 `;
 export const Navbarlang = styled.div`
 display: flex;

@@ -26,16 +26,21 @@ const Motorcomponent = () => {
 
   return (
     <BigContainer><div className='navbar-2'></div>
+
       <Bacfon className='bac-img'>
+
         <Bacmenu>
           <h5>Home / Motors</h5>
           <h4>Our ranges</h4>
           <h2>Motors</h2>
         </Bacmenu>
+
       </Bacfon>
+
       <MiniMidlCon className='MiniMidlCon'>
 
          <Leftmenu className='Leftmenu'>
+
           <Leftmenus>
             <div className='menus-Wrapper'>Cost of car</div>
             <div className='input-wrapper-1'>
@@ -43,6 +48,7 @@ const Motorcomponent = () => {
             <div className='input-wrapper-2'> <label>to</label> <input/> </div>
             </div>
           </Leftmenus>
+          
           <Leftmenus>
             <div className='menus-Wrapper'>Brand</div>
             <div className='input-wrapper'>
@@ -141,6 +147,7 @@ const Motorcomponent = () => {
           </RightMenuWrapper>
 
       </MiniMidlCon>
+
     </BigContainer>
   )
 }

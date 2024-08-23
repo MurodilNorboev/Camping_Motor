@@ -1,54 +1,41 @@
 
 
 
-
-export const caravanCar = {
-    mainCon: [ {
+export const tuningCar = {
+    tuningCon: [ {
         id: 1,
         car: {
             img: "https://lh3.googleusercontent.com/36dya0NVwwg3TNn4lYinuN-RmmM55j_OJrmf5zi1f9Vb5sq9ESN0SWxcotLu0Q5BcxFau6yJ6FGMQqJmLixsfsUDQU61Jovjywj2qIyx5BVef64bjPs9JR6WF3KBR6GFJgSMfc7_JiRBRdxSig",
-            CarName: "c72",
-            BrandName: "Honda",
-            Cost: "55,000,000",
-            company: "Mersades",
-            place: "5",
-            license: "3 Year"
+            CarName: "Name of the car",
+            BrandName: "Brand Name",
+            Cost: "100 $",
         }
     },
     {
         id:2,
         car: {
             img: "https://couchpotatocamping.com/wp-content/uploads/2022/05/Roulotte-Prolite-Mini-Travel-Trailer-1024x591.png",
-            CarName: "d82",
-            BrandName: "samusng",
-            Cost: "27,000,000",
-            company: "bmw",
-            place: "5",
-            license: "2 Year"
+            CarName: "Name of the car",
+            BrandName: "Brand Name",
+            Cost: "100 $",
         }
     },
     {
         id:3,
         car: {
             img: "https://escapetrailer.com/wp-content/uploads/2023/03/travel-trailer-fiberglass-RV-Escape-E21NE-exterior-01.jpg",
-            CarName: "o95",
-            BrandName: "d 218",
-            Cost: "27,000,000",
-            company: "Hudai",
-            place: "9",
-            license: "5 Year"
+            CarName: "Name of the car",
+            BrandName: "Brand Name",
+            Cost: "100 $",
         }
     },
     {
         id:4,
         car: {
             img: "https://crowsurvival.com/wp-content/uploads/2019/06/20160219_101309_clipped_rev_1_690-802-672-414-80.jpg",
-            CarName: "c78 m",
-            BrandName: "",
+            CarName: "Name of the car",
+            BrandName: "Brand Name",
             Cost: "100 $",
-            company: "bmw",
-            place: "5",
-            license: "C (class)"
         }
     },
     {

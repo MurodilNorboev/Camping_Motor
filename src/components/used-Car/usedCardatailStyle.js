@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
+
 // car-Img // ((((((MEDIA))))))
-export const DatailConCaravan = styled.div`
+export const DatailConUsedCar = styled.div`
 padding-top: 85px;
 display: flex;
 flex-direction: column;

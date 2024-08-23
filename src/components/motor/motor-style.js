@@ -10,7 +10,7 @@ width: 100%;
 }
 `;
 
-
+// ((((((((((((media ))))))))))))
 export const MiniMidlCon = styled.div`
 display: flex;
 justify-content: center;
@@ -315,7 +315,7 @@ margin-top: 8px;
     } 
 }
 `;
-// right menus
+// right menus(((( ustate))))
 export const RightMenu = styled.div`
 display: grid;
 grid-template-areas: " a a a a ";
@@ -361,8 +361,10 @@ export const Lengmenus = styled.div`
     max-width: 1000px;
     width: 130vmin;
     min-width: 100px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
     padding: 0px 40px 0px 18px;
     border-radius: 20px;
+    
 
     .menu-wrap {
         display: flex;

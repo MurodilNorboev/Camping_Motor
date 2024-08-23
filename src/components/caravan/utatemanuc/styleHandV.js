@@ -1,6 +1,56 @@
 import styled from "styled-components";
 
-// ustatetrmenu
+
+
+// Hmenu ((((((media))))))
+export const RightMenuWrapper = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+@media only screen and (max-width: 1005px){
+    .RightMenu {
+        display: grid;
+        grid-template-areas: " a a a ";
+    }
+}
+@media only screen and (max-width: 980px){
+     .RightMenu {
+        display: grid;
+        grid-template-areas: " a a a ";
+     }
+}
+@media only screen and (max-width: 755px){
+      .RightMenu {
+        display: grid;
+        grid-template-areas: " a a ";
+    } 
+    
+} 
+@media only screen and (max-width: 640px){
+    .RightMenu {
+        display: grid;
+        grid-template-areas: " a ";
+    } .RihtNavbarCon {
+        display: grid;
+        grid-template-rows: " a a ";
+        place-items:unset;
+        width: 100%;
+        height: 90px;
+        padding: 0px;
+    } .navbar-menus-4 img{
+       display: none;
+    } .navbar-menus-7 img {
+       display: flex;
+   } .NavbarMenul {
+        display: flex;
+        width: 100%;
+        padding-right: 5px;
+    }
+}
+
+`;
+// Menus
 export const RightMenu = styled.div`
 display: grid;
 grid-template-areas: " a a a a ";
@@ -10,7 +60,11 @@ gap: 30px 30px;
 padding: 20px 0px;
 width: 100%;
 `;
-export const CarWrapper = styled.div`
+//link
+// export const NewLink = styled(Link)``;
+
+// Car Menus Wrapper
+export const CarConWrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -60,8 +114,8 @@ box-shadow:
     font-weight: 600;
     padding-bottom: 5px;
 } .h5 {
-    display: flex;
     justify-content: space-between;
+    display: flex;
     color: var(--text, #373737);
     font-family: Montserrat;
     font-size: 12px;
@@ -69,6 +123,7 @@ box-shadow:
     padding-bottom: 18px;
 } .bottom h4 {
     display: flex;
+    align-items: center;
     gap: 3px;
 } .bottom h2 {
     color: var(--blue, #006DAB);
@@ -82,26 +137,21 @@ box-shadow:
 } .Button0 :hover {
     background-color: #006DAB;
     color: white;
-} 
+}
 .Car0 {
     width: 202.42px;
     height: 137.433px;
     background-color: white;
 }
 `;
-export const Button1 = styled.button`
-height: ${(props)=> (props.$second ?  "35px" : "35px")};
-width: ${(props)=> (props.$second ? "94px" : "94px")};
-border-radius: ${(props)=> (props.$second ? "10px" : "10px")};
-background-color: white;
-border-radius: 10px;
-border: 1px solid var(--blue, #006DAB);
-color: var(--blue, #006DAB);
-cursor: pointer;
 
-`;
 
-// ustat
+
+
+
+
+
+// Vmanu
 export const RightNavbarRow = styled.div`
 display: grid;
 grid-template-areas: " i ";

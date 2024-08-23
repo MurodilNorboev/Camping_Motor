@@ -8,12 +8,20 @@ import Footer from './components/context/footer';
 
 
 
+
+export default RouterComponent
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
-    <Navbar />
-    <RouterComponent />
-    <Footer />
+root.render(<>
+  
+  <BrowserRouter> 
+    
+     
+     
+  <Navbar/>
+  <RouterComponent />
+       <Footer />
+      
   </BrowserRouter>
+  </>
 );
 
