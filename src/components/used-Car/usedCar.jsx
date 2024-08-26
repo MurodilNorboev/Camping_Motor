@@ -139,8 +139,8 @@ const UsedCarComponent = () => {
             <div className='navbar-menus-1'><h2>Item</h2><h3>25.156</h3></div>
 
             <div  className='navbar-menus-7'>
-                <img src={minimenu1} alt='mini-menu1'/>
-                <div className='navbar-menus-5'><img src={minimenu2} alt='mini-menu2'/></div>
+            <div className='navbar-menus-05' onClick={Ushmenuclick}><img src={minimenu1} alt='mini-menu1'/></div>
+            <div className='navbar-menus-5'  onClick={Usvmenuclick}><img src={minimenu2} alt='mini-menu2'/></div>
               </div>
 
               </NavbarMenul>

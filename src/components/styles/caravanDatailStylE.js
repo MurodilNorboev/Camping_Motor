@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // car-Img // ((((((MEDIA))))))
 export const DatailConCaravan = styled.div`
-padding-top: 85px;
+padding-top: 85.5px;
 display: flex;
 flex-direction: column;
 .infowrapper {

@@ -25,7 +25,7 @@ function Login({ onLogin }) {
                      </div>
                     <h3>Forget your password?</h3>
                 </div>
-                <Link to={'/motor'}>
+                <Link to={'/'}>
                 <div className="loginis4">
                     <button onClick={onLogin}>SIGN IN</button>
                 </div>

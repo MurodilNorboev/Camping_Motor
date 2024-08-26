@@ -17,7 +17,7 @@ const UsedDatail = () => {
   return (
     <DatailConUsedCar>
 
-      <Bacfon className='bac-img'>
+      <Bacfon className='bac-imgUsed-Car'>
 
         <Bacmenu>
           <h2>Aidal</h2>

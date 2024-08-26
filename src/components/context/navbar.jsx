@@ -4,38 +4,11 @@ import cart from '../../assets/cart.svg'
 import peopl from '../../assets/peopl.svg'
 import Iconpastle from '../../assets/iconpastle.svg'
 import menuIcon from '../../assets/menu-icon.svg'
-import { useLocation } from 'react-router-dom'
-import { Box, CssBaseline } from '@mui/material'
-import { Experimental_CssVarsProvider as CssVarsProvider } from '@mui/material/styles';
-
-import Footer from './footer'
-
-
-// const location = useLocation();
-// const hideSidebar = location.pathname === "/login";
-
 
 
 const  Navbard = () => {
-
-// 1
-const location = useLocation();
-const hideSidebar = location.pathname === "/login";
-
-
-  // const location = useLocation();
-  // const hideSidebar = location.pathname === "/";
-  
-
-
   return (
     <>
-      <CssVarsProvider disableTransitionOnChange>
-      <CssBaseline/>
-      <Box sx={{display: "flex"}}>
-        {!hideSidebar && <Navbar/>}
-        {/* {!hideSidebar && <Footer/>} */}
-
     <Navbar> 
           <Logowrapper className='Logowrapper'>  
           <MenuIcon className='menu-Icon'><img src={menuIcon} alt='menu-Icon'/></MenuIcon>
@@ -64,8 +37,7 @@ const hideSidebar = location.pathname === "/login";
             </Navbarlang>
         </IconWrapper>
     </Navbar>
-    </Box>
-    </CssVarsProvider>
+
     </>
   )
 }

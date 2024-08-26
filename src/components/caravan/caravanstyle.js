@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const CaravanCon = styled.div`
-padding-top: 85px;
+padding-top: 85.5px;
 `;
 
 export const BacmenuCaravan = styled.div`

@@ -1,181 +1,244 @@
 
 
-
 export const tuningCar = {
     tuningCon: [ {
         id: 1,
         car: {
-            img: "https://lh3.googleusercontent.com/36dya0NVwwg3TNn4lYinuN-RmmM55j_OJrmf5zi1f9Vb5sq9ESN0SWxcotLu0Q5BcxFau6yJ6FGMQqJmLixsfsUDQU61Jovjywj2qIyx5BVef64bjPs9JR6WF3KBR6GFJgSMfc7_JiRBRdxSig",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://lezebre.lu/images/thumbnails/400/400/detailed/23/55_Tribal_Tuning_2-camping-car.jpg",
+            CarName: "d 34",
+            BrandName: "Brusten",
+            Cost: "33,000,000",
+            company: "Hymer",
+            place: "5",
+            license: "1 Year"
         }
     },
     {
         id:2,
         car: {
-            img: "https://couchpotatocamping.com/wp-content/uploads/2022/05/Roulotte-Prolite-Mini-Travel-Trailer-1024x591.png",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://www.shutterstock.com/image-illustration/camper-van-isolated-260nw-155317418.jpg",
+            CarName: "d 49j",
+            BrandName: "Carado",
+            Cost: "23,000,000",
+            company: "Hymer",
+            place: "5",
+            license: "1 Year"
         }
     },
     {
         id:3,
         car: {
-            img: "https://escapetrailer.com/wp-content/uploads/2023/03/travel-trailer-fiberglass-RV-Escape-E21NE-exterior-01.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://www.shutterstock.com/image-photo/travel-motorhome-family-car-camping-600nw-2232751335.jpg",
+            CarName: "d 32",
+            BrandName: "Winnebago",
+            Cost: "13,000,000",
+            company: "Hymer",
+            place: "5",
+            license: "1 Year"
         }
     },
     {
         id:4,
         car: {
-            img: "https://crowsurvival.com/wp-content/uploads/2019/06/20160219_101309_clipped_rev_1_690-802-672-414-80.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://st2.depositphotos.com/1063296/11395/i/950/depositphotos_113957692-stock-photo-big-white-camper-van-isolated.jpg",
+            CarName: "d 78",
+            BrandName: "Laika",
+            Cost: "49,000,000",
+            company: "Hymer",
+            place: "5",
+            license: "1 Year"
         }
     },
     {
         id:5,
         car: { 
-            img: "https://5.imimg.com/data5/NR/GC/TW/SELLER-56701174/travel-trailer-truck-camper-expedition-vehicle-off-road-vehicle-500x500.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://st2.depositphotos.com/1063296/11395/i/950/depositphotos_113958154-stock-photo-big-white-and-red-camper.jpg",
+            CarName: "d 93",
+            BrandName: "Auto-Saltes",
+            Cost: "7,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:6,
         car: {
-            img: "https://naturedens.com/cdn/shop/products/14_c3a229f2-8fbb-4c9e-a9ea-095705fa7a6f_300x300.png?v=1532491172",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://media.istockphoto.com/id/501190003/photo/motorhome-california.jpg?s=612x612&w=0&k=20&c=i1ooP0moX4-NTVvRL6u6f16huWSX84MJ0IWAukfqdRU=",
+            CarName: "d 58",
+            BrandName: "Chausson",
+            Cost: "28,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:7,
         car: {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSynUtlVppwlatg0xKgU23VlUJ52-JgbOQDjsXaaPPXJDthwPRhDAYTbAtS9zTRcv7j7E&usqp=CAU",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://static.vecteezy.com/system/resources/previews/031/193/885/large_2x/white-camper-vehicle-rear-view-isolated-on-white-background-photo.jpg",
+            CarName: "d 35",
+            BrandName: "Entegra",
+            Cost: "17,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:8,
         car: {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa0fGtttZhP_o-T2419_LUVj9XvZWOfSoFK_oeHYunWa_I6MX59SJcBi0D3hk31GhJJQ0&usqp=CAU",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://paultan.org/image/2021/12/Daihatsu-Atrai-Premium-Version-e1640258589675-850x573.jpg",
+            CarName: "d 23",
+            BrandName: "Airstream",
+            Cost: "57,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:9,
         car: {
-            img: "https://i0.wp.com/www.theadventuretravelers.com/wp-content/uploads/2019/12/cricket-rendering-taxa-outdoors-The-Adventure-Travelers.png?fit=768%2C528&ssl=1",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://media.istockphoto.com/id/585587240/photo/camper-van-isolated.jpg?s=1024x1024&w=is&k=20&c=EIPabjeojoOYBFdSc_CwZJLB8uvp0ZYR2qaIHLJjJTI=",
+            CarName: "d 91",
+            BrandName: "Dethflehh",
+            Cost: "23,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:10,
         car: {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYWnhlsw6lnniojeLjHYHYQbvf7WdTHOB9s2hpGiBkGLXLmls42eltPuK7-7qHTKVN11I&usqp=CAU",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://i.pinimg.com/736x/57/d7/f9/57d7f95257e3dfd8fc326a89b141dcdf.jpg",
+            CarName: "d 13",
+            BrandName: "Carthago",
+            Cost: "77,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:11,
         car: {
-            img: "https://design-milk.com/images/2016/01/Roundup-RV-1b-Airstream-Pendleton-600x351.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://media.istockphoto.com/id/467652602/photo/camper-van-isolated.jpg?s=612x612&w=0&k=20&c=XGLxURv0mqVL4iSOy3HpLAo_gMQVjpQcB7cpmfGOrDQ=",
+            CarName: "d 90",
+            BrandName: "Heartland",
+            Cost: "92,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:12,
         car: {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_BW0bXVwrageBM8zue6Ehsem-KiH57wrDIEJU3mP1ofdAvClQaKo-mWfE8eYa9sc470&usqp=CAU",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L3drNTg1NjE4NDMtaW1hZ2UtMDMtam9iMTcyMC5qcGc.jpg",
+            CarName: "d 73",
+            BrandName: "Motor Hoash",
+            Cost: "66,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:13,
         car: {
-            img: "https://www.kz-rv.com/products/connect-mini-travel-trailers/images/2024/homepage/2024-KZ-RV-Connect-Mini-CM191BHK-Ultra-Lightweight-Travel-Trailer.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyIb2PwjfAaQ1jieapA0_Kf9QJu7BpztwRQ&s",
+            CarName: "d 44",
+            BrandName: "Blucamp",
+            Cost: "88,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:14,
         car: {
-            img: "https://www.jayco.com/uploads/rvs/images/6505-Jay%20Feather%20Micro%203-4_gallery_WEB.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://st2.depositphotos.com/1063296/11395/i/450/depositphotos_113958018-stock-photo-black-and-white-camper-vehicle.jpg",
+            CarName: "d 54e",
+            BrandName: "Roadster",
+            Cost: "91,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:15,
         car: {
-            img: "https://www.jayco.com/uploads/rvs/images/5735-JayFeather20_X23B_frtext-open.jpg",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSz0VxC-Hg94jY1I5O7bR9anuABszxt1srQJa8thhsPSYqbXNRbl4btIiC93MWdqn0LI&usqp=CAU",
+            CarName: "d 17",
+            BrandName: "Forest",
+            Cost: "79,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:16,
         car: {
-            img: "https://www.jayco.com/uploads/rvs/years/4750-JayFeather_27BH_frt3-4EXT_web.png",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVJFlCQfbZEoAM8fQgGftQtD5aAWNGkmnU6Hr9TCkg22dH8nVAVdS3mzPYfn2np9G6p4&usqp=CAU",
+            CarName: "d 33",
+            BrandName: "Adria",
+            Cost: "67,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:17,
         car: {
-            img: "https://www.interactcp.com/blog/windishrvcom/wp-content/uploads/sites/30/2018/12/brand_photo_201806140304081681455458.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQvcmOlNDYMkGcVNRvbFMoZxhgSFTtXWiJsQyBSxBCXlQNc-tBxY864LdG6dP_FV1RWI&usqp=CAU",
+            CarName: "d 55",
+            BrandName: "Benimar",
+            Cost: "97,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:18,
         car: {
-            img: "https://starcraftrv.com/uploads/rvs/images/72-img-MY23_Super-Lite-212_FB_3-4_WEB.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://t3.ftcdn.net/jpg/00/76/09/80/360_F_76098075_NyrDiUeFNazIDR5rdREotJY9zoQpcSHp.jpg",
+            CarName: "d 69",
+            BrandName: "Elddis",
+            Cost: "29,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:19,
         car: {
-            img: "https://cdn.jdpower.com/crs/400x200/2016_GulfStream_StreamLite_Champagne.jpg",
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ1jJ0v8PmucGR9WoNXmK9qFDK7u1oGVdcxl7R5Xwc_33z3xDa6yQkUjEejFmVVBmWHW8&usqp=CAU",
+            CarName: "d 008",
+            BrandName: "Atqo",
+            Cost: "57,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         }
     },
     {
         id:20,
         car:{
-            img: "https://ae01.alicdn.com/kf/Sc62b8888867f438e843beb0b0e66e055e/Outdoor-Offroad-Camping-Caravan-Caravans-Australian-Standard-Travel-Trailer-on-Sale.jpg",  
-            CarName: "Name of the car",
-            BrandName: "Brand Name",
-            Cost: "100 $",
+            img: "https://www.lemondeducampingcar.fr/wp/wp-content/uploads/2020/06/rapido-C86-1.jpg",  
+            CarName: "d 75",
+            BrandName: "Ins",
+            Cost: "72,000,000",
+            company: "Hymer",
+            place: "7",
+            license: "1 Year"
         
         },
     }

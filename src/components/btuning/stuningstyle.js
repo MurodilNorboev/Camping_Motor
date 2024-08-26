@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 // bac img
 export const TuningCon = styled.div`
-padding-top: 85px;
+padding-top: 85.5px;
 `;
 export const BacmenuTuning = styled.div`
 display: flex;

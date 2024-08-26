@@ -1,5 +1,5 @@
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Motorcomponent from './components/motor'
 import CampingPlaseComponent from './components/camping-Plase/campingPlase'
 import NotFileComponent from './components/404'
@@ -13,20 +13,29 @@ import UsedDatail from './components/used-Car/usedDatail'
 import DatailCamping from './components/camping-Plase/datailCamping'
 import Login from './components/login/login'
 import LoginReg from './components/loginReg/LoginReg'
-
-
-
-
-
+import Navbard from './components/context/navbar'
+import Footer from './components/context/footer'
+import MainComponent from './components/mainPage/main'
+import { Box, CssBaseline, Experimental_CssVarsProvider } from '@mui/material'
 
 
 
 
 const  RouterComponent = () => {
 
+  const location = useLocation();
+const LoginContainer = location.pathname === "/login" || location.pathname === "/loginReg" 
+
   return (<>
+  {!LoginContainer && <Navbard/>}
+
+
   <Routes>
+    
+
     <Route path='*' element={<NotFileComponent />}/>
+
+    <Route path='/' element={<MainComponent />} />
 
     <Route path='/login' element={<Login/>}/>
     <Route path='/loginReg' element={<LoginReg/>}/>
@@ -48,6 +57,7 @@ const  RouterComponent = () => {
 
 
   </Routes>
+  {!LoginContainer && <Footer/>}
   </>
   )
 }

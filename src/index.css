@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,17 +17,13 @@ code {
   margin: 0;
   box-sizing: border-box;
 } .bac-img {
-  background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(./assets/image.png);
+  background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(./assets/camping\ _img_fon.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
-} .navbar-2 {
-  height: 86px;
-  width: 100%;
-  ;
-}
+} 
 .bac-imgcaravan {
   background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://st4.depositphotos.com/1000647/21154/i/450/depositphotos_211542644-stock-photo-family-vacation-travel-holiday-trip.jpg);
   background-position: center;
@@ -59,3 +56,4 @@ code {
   align-items: center;
   justify-content: center;
 }
+/* https://www.avisexplore.com/data/cache/Vehicle/picture/main/2/5/37.1716277662.jpg */

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const LoginCon = styled.div`
-padding-top: 84px;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 148px 0px 64px 0px;
+height: 100%;
+padding: 64px 0px 64px 0px;
 `;
 export const LoginWrap = styled.div`
 display: flex;
@@ -14,6 +14,7 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 width: 68vmin;
+max-width: 500px;
 max-height: 614px;
 border-radius: 20px;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
@@ -37,6 +38,7 @@ h2 {
 } .loginis1 input {
     border: none;
     width: 59.5vmin;
+    max-width: 434px;
     padding: 17px 20px;
     border-radius: 10px;
     background: rgba(55, 55, 55, 0.10);
@@ -75,6 +77,7 @@ h2 {
     cursor: pointer;
     border: none;
     width: 59.5vmin;
+    max-width: 434px;
     height: 50px;
     border-radius: 10px;
     background: var(--blue, #006DAB);
@@ -123,6 +126,7 @@ h2 {
     color: var(--blue, #006DAB);
     background-color: transparent;
     width: 59.5vmin;
+    max-width: 434px;
     height: 50px;
     border-radius: 10px;
     font-size: 15px;

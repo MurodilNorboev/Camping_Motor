@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const BigContainer = styled.div`
 width: 100%;
+padding-top: 85.5px;
 .footer-mini-con-img-2 {
     display: none;
 } .footer-mini-con-0-1 {
@@ -14,9 +15,9 @@ width: 100%;
 export const MiniMidlCon = styled.div`
 display: flex;
 justify-content: center;
-height: 100%;
 gap: 50px;
 padding-top: 50px;
+border: 1px solid green;
  .navbar-menus-7 div {
     display: none;
 } 
@@ -84,7 +85,6 @@ export const NavbarMenul = styled.div`
 display: flex;
 height: 36px;
 `;
-
 export const Leftmenu = styled.div`
 
 width: 250px;
@@ -191,7 +191,9 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 36px;
-width: 1000px;
+width: 100%;
+/* width: 1000px; */
+/* max-width: 1000px; */
 border-bottom: 1px solid #37373780;   
 padding-bottom: 15px;
 margin-top: 8px;
@@ -303,7 +305,7 @@ margin-top: 8px;
     width: 40px;
     height: 30px;
 } 
-@media only screen and (max-width: 420px) {
+/* @media only screen and (max-width: 420px) {
     .MiniMidlCon {
         display: flex;
     } .RightNavbar {
@@ -313,7 +315,7 @@ margin-top: 8px;
         width: 100%;
         height: 90px;
     } 
-}
+} */
 `;
 // right menus(((( ustate))))
 export const RightMenu = styled.div`
@@ -325,116 +327,103 @@ gap: 30px 30px;
 padding: 20px 0px;
 width: 100%;
 `;
-
 // ustate
-export const RightNavbarRow = styled.div`
-display: grid;
-grid-template-areas: " i ";
-align-items: center;
-justify-content: center;
-padding: 20px 0px;
-width: 100%;
-row-gap: 20px;
-.tuzatish {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-} 
-@media only screen and (max-width: 960px) {
-    .Lengmenus {
-        display: grid;
-        grid-template-areas: " a ";
-        justify-content: center;
-        align-items: center;
-        width: 90vw;
-        padding-right: 0px;
-        padding-left: 0px; 
-        padding-bottom: 10px;
-    } 
-}
-`;
-export const Lengmenus = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    width: 130vmin;
-    min-width: 100px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
-    padding: 0px 40px 0px 18px;
-    border-radius: 20px;
+// export const RightNavbarRow = styled.div`
+// display: grid;
+// grid-template-areas: " i ";
+// align-items: center;
+// justify-content: center;
+// padding: 20px 0px;
+// width: 100%;
+// row-gap: 20px;
+// .tuzatish {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+// } 
+// `;
+// export const Lengmenus = styled.div`
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     max-width: 1000px;
+//     width: 130vmin;
+//     min-width: 100px;
+//     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
+//     padding: 0px 40px 0px 18px;
+//     border-radius: 20px;
     
 
-    .menu-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        justify-content: center;
-    } .to-wrap {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    } .menu-wrap h3 {
-        color: var(--text, #373737);
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 600;
-        padding-top: 32px;
-    } .menu-wrap h2 {
-        color: var(--blue, #006DAB);
-        font-family: Montserrat;
-        font-size: 22px;
-        font-weight: 700;
-        padding-top: 28px;
-    } .menu-wrap h5 {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        color: var(--text, #373737);
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 400;
-        padding-top: 5px;
-    } .Button0 {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 30px;
-        width: 100%;
-        gap: 14.68px;
-    } .Car0 {
-    width: 280px;
-    height: 143.853px;
-    padding-right: 40px;
-}
-.Button0 :hover{
-    background-color:  #006DAB;
-    color: white;
-}
-@media only screen and (max-width: 850px){
-    .Button0 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-}
-`;
-export const ButtonBig = styled.button`
-    width: 40vmin;
-    max-width: 340px;
-    height: 35px;
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #006DAB;
-    border: 1px solid var(--blue, #006DAB);
-    cursor: pointer;
-.ButtonBig :hover {
-    background-color:  #006DAB;
-}
-`;
+//     .menu-wrap {
+//         display: flex;
+//         flex-direction: column;
+//         align-items:flex-start;
+//         justify-content: center;
+//     } .to-wrap {
+//         display: flex;
+//         width: 100%;
+//         justify-content: space-between;
+//     } .menu-wrap h3 {
+//         color: var(--text, #373737);
+//         font-family: Montserrat;
+//         font-size: 18px;
+//         font-weight: 600;
+//         padding-top: 32px;
+//     } .menu-wrap h2 {
+//         color: var(--blue, #006DAB);
+//         font-family: Montserrat;
+//         font-size: 22px;
+//         font-weight: 700;
+//         padding-top: 28px;
+//     } .menu-wrap h5 {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//         color: var(--text, #373737);
+//         font-family: Montserrat;
+//         font-size: 12px;
+//         font-weight: 400;
+//         padding-top: 5px;
+//     } .Button0 {
+//         display: flex;
+//         justify-content: space-between;
+//         padding-top: 30px;
+//         width: 100%;
+//         gap: 14.68px;
+//     } .Car0 {
+//     width: 280px;
+//     height: 143.853px;
+//     padding-right: 40px;
+// }
+// .Button0 :hover{
+//     background-color:  #006DAB;
+//     color: white;
+// }
+// @media only screen and (max-width: 850px){
+//     .Button0 {
+//         display: flex;
+//         justify-content: center;
+//         width: 100%;
+//     }
+// }
+// `;
+// export const ButtonBig = styled.button`
+//     width: 40vmin;
+//     max-width: 340px;
+//     height: 35px;
+//     display: flex;
+//     background-color: white;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 10px;
+//     color: #006DAB;
+//     border: 1px solid var(--blue, #006DAB);
+//     cursor: pointer;
+// .ButtonBig :hover {
+//     background-color:  #006DAB;
+// }
+// `;
 
 
 

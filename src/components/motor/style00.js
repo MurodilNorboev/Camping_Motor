@@ -101,112 +101,120 @@ cursor: pointer;
 
 `;
 
-// ustat
+// ustat ((((((((((Media)))))))))) 
 export const RightNavbarRow = styled.div`
-display: grid;
-grid-template-areas: " i ";
-align-items: center;
-justify-content: center;
-padding: 20px 0px;
-width: 100%;
-row-gap: 20px;
-.tuzatish {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-} 
-@media only screen and (max-width: 960px) {
-    .Lengmenus {
-        display: grid;
-        grid-template-areas: " a ";
-        justify-content: center;
-        align-items: center;
-        width: 90vw;
-        padding-right: 0px;
-        padding-left: 0px; 
-        padding-bottom: 10px;
-    } 
-}
-`;
-export const Lengmenus = styled.div`
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 40px;
+.tuzatish {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1000px;
-    width: 130vmin;
-    min-width: 100px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
-    padding: 0px 40px 0px 18px;
-    border-radius: 20px;
-    
+} 
 
-    .menu-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        justify-content: center;
-    } .to-wrap {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    } .menu-wrap h3 {
-        color: var(--text, #373737);
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 600;
-        padding-top: 32px;
-    } .menu-wrap h2 {
-        color: var(--blue, #006DAB);
-        font-family: Montserrat;
-        font-size: 22px;
-        font-weight: 700;
-        padding-top: 28px;
-    } .menu-wrap h5 {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        color: var(--text, #373737);
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 400;
-        padding-top: 5px;
-    } .Button0 {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 30px;
-        width: 100%;
-        gap: 14.68px;
-    } .Car0 {
+`;
+// (((((((((Media)))))))))
+export const Lengmenus = styled.div`
+     width: 955px;
+    height: 180px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+    border-radius: 18px;
+    margin-top: 20px;
+    padding: 18px;
+    display: flex;
+    margin: 0px 13.5px;
+    .Car0 img{
     width: 280px;
-    height: 143.853px;
-    padding-right: 40px;
+    height: 143px;
+    border-radius: 20px;
 }
-.Button0 :hover{
+.menu-wrap{
+    width: 100%;
+    
+}
+.to-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+    div {
+    display: flex;
+    } 
+} 
+.to-wrap1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+    div {
+    display: flex;
+    } 
+}
+h5{
+    display: flex;
+    justify-content: space-between;
+}
+.ww {
+    display: flex;
+    margin-top: 30px;
+    gap: 14px;
+} .to-wrap h2 {
+    color: #006DAB;
+}
+.ww button {
+  width: 100%;
+height: 35px;
+font-size: 14px;
+border-radius: 10px;
+border: 1px solid var(--blue, #006DAB);
+background-color: white;
+color: #006DAB;
+cursor: pointer;
+margin-top: 13px;
+}
+.ww :hover{
     background-color:  #006DAB;
     color: white;
 }
-@media only screen and (max-width: 850px){
-    .Button0 {
+@media only screen and (max-width: 960px){
+  width: 100%;
+  .menu-wrap {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 700px){
+    .menu-wrap {
+    width: 250px;
+  }    border: 1px solid red;
+}
+@media only screen and (max-width: 630px){
+    .Car0 img{
+        width: 200px;
+    } .to-wrap1 {
         display: flex;
-        justify-content: center;
-        width: 100%;
+        flex-direction: column;
+    } .menu-wrap {
+    width: 200px;
+  } .ww {
+        margin-top: 0px;
     }
 }
-`;
-export const ButtonBig = styled.button`
-    width: 40vmin;
-    max-width: 340px;
-    height: 35px;
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #006DAB;
-    border: 1px solid var(--blue, #006DAB);
-    cursor: pointer;
-.ButtonBig :hover {
-    background-color:  #006DAB;
+@media only screen and (max-width: 500px){
+    .Car0 img{
+        width: 150px;
+    }  
+}
+@media only screen and (max-width: 440px){
+    .Car0 img{
+        width: 100px;
+    } .menu-wrap {
+    width: 150px;
+  }
 }
 `;
+
+

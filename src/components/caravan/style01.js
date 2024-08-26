@@ -312,9 +312,6 @@ gap: 30px 30px;
 padding: 20px 0px;
 width: 100%;
 `;
-//link
-export const NewLink = styled(Link)``;
-
 // Car Menus Wrapper
 export const CarConWrapper = styled.div`
 display: flex;
@@ -396,4 +393,5 @@ box-shadow:
     background-color: white;
 }
 `;
-
+//link
+export const NewLink = styled(Link)``;

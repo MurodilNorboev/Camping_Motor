@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // bac img
 export const UsedCarCon = styled.div`
-padding-top: 85px;
+padding-top: 85.5px;
 `;
 export const BacmenuUsedCar = styled.div`
 display: flex;

@@ -4,12 +4,16 @@ import styled from "styled-components";
 
 
 export const Navbar = styled.div`
+  z-index: 1;
   padding: 20px;
   display: flex;
   position: fixed;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   
 @media only screen and (max-width: 834px) {
   .container {

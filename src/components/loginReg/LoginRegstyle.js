@@ -5,9 +5,10 @@ padding-top: 84px;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 148px 0px 64px 0px;
+padding: 100px 0px 64px 0px;
 `;
 export const LoginWrap = styled.div`
+max-width: 500px;
 display: flex;
 padding: 33px;
 flex-direction: column;
@@ -35,6 +36,7 @@ h2 {
     font-weight: 600;
     padding-bottom: 10px;
 } .loginis1 input {
+    max-width: 434px;
     border: none;
     width: 59.5vmin;
     padding: 17px 20px;
@@ -73,6 +75,7 @@ h2 {
     width: 100%;
 } .loginis8 button {
     cursor: pointer;
+    max-width: 434px;
     border: none;
     width: 59.5vmin;
     height: 50px;

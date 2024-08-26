@@ -8,7 +8,6 @@ import minimenu1 from '../../assets/menu1.svg'
 import minimenu2 from '../../assets/menu2.svg'
 import icon1 from '../../assets/iconpastle.svg'
 import icon2 from '../../assets/iconpastle.svg'
-import { RightMenu } from './motor-style'
 import { ButtonA } from '../caravan/style01'
 import UstateComponent from './ustates_menu/ustate'
 import UstatetrumenuComponent from './ustates_menu/ustatetrumenu'
@@ -25,7 +24,7 @@ const Motorcomponent = () => {
   }
 
   return (
-    <BigContainer><div className='navbar-2'></div>
+    <BigContainer> 
 
       <Bacfon className='bac-img'>
 

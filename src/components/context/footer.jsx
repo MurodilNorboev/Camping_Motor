@@ -3,28 +3,20 @@ import React from 'react'
 import Youtube from '../../assets/youtube.svg'
 import Instagram from '../../assets/instagram.svg'
 import Naver from '../../assets/naver.svg'
-import { Footerd } from '../styles/FoterStyle'
-import { Experimental_CssVarsProvider as CssVarsProvider } from '@mui/material/styles';
-import { useLocation } from 'react-router-dom'
-import { Box, CssBaseline } from '@mui/material'
-const Footer = () => {
+import { Footer_menus, Footerd } from '../styles/FoterStyle'
 
-//   const location = useLocation();
-// const hideSidebar = location.pathname === "/login";
+
+
+const Footer = () => {
 
 
   return (
-    <div>
-            {/* <CssVarsProvider disaableTransitionOnChange>
-      <CssBaseline/>
-      <Box sx={{display: "none"}}>
-        {/* {!hideSidebar && <Navbar/>} */}
-        {/* {!hideSidebar && <Footer/>}  */}
 
         <Footerd className='FooterContainer'> 
      
 
-     <div className='footer-menus'>
+     <Footer_menus className='footer_menus'>
+
      <div className='footer-mini-con-0-1'><h1>Logo</h1></div>
      <div className='footer-mini-con-0'><h1>Camper</h1></div>
        <div className='footer-mini-con'>
@@ -63,12 +55,11 @@ const Footer = () => {
          <img src={Instagram}/>
          <img src={Naver}/>
        </div>
-     </div>
+     </Footer_menus>
     
        </Footerd>
-       {/* </Box>
-       </CssVarsProvider> */}
-    </div>
+
+
   )
 }
 

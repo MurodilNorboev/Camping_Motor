@@ -144,7 +144,7 @@ export const campcar = {
         id:16,
         car: {
             img: "https://m.media-amazon.com/images/I/41D8HUVoDjL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg",
-            CarName: "Fifth Wheels a Charmr",
+            CarName: "Fifth Wheels ",
             BrandName: "Forest River",
             Cost: "180,000,000",
         }

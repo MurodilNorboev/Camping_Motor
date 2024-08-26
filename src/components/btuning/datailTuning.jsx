@@ -20,7 +20,7 @@ const DatailTuning = () => {
     <DatailConTuning>
 
 
-      <Bacfon className='bac-img'>
+      <Bacfon className='bac-imgTuning'>
         <Bacmenu>
           <h2>Aidal</h2>
           <div className='ButWrap'> <button>ADD TO CART</button><button>COMPARE</button></div>

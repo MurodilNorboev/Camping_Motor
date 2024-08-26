@@ -33,6 +33,7 @@ const  MidlComponent = () => {
 
   return (
     <MidlCon className='MidlCon'>
+        
         <LeftCon className="left-Con">
             <div className="leftMenu0">
                     <h3>Cost of car</h3>
@@ -138,8 +139,8 @@ const  MidlComponent = () => {
             <div className='navbar-menus-1'><h2>Item</h2><h3>25.156</h3></div>
 
             <div  className='navbar-menus-7'>
-                <img src={minimenu1} alt='mini-menu1'/>
-                <div className='navbar-menus-5'><img src={minimenu2} alt='mini-menu2'/></div>
+            <div className='navbar-menus-05' onClick={handleClick}><img src={minimenu1} alt='mini-menu1'/></div>
+            <div className='navbar-menus-5' onClick={handleSetClick}><img src={minimenu2} alt='mini-menu2'/></div>
               </div>
 
               </NavbarMenul>
