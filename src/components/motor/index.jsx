@@ -142,7 +142,6 @@ const Motorcomponent = () => {
           </RightNavbar>
 
           {active ? <UstatetrumenuComponent/> : <UstateComponent/>} 
-
           </RightMenuWrapper>
 
       </MiniMidlCon>

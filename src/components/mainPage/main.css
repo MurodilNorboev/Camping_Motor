@@ -1,4 +1,9 @@
+.main_Con_wrap {
+    border: 3px solid red;
+    width: 100%;
+}
 .carusel {
+    border: 1px solid rebeccapurple;
     padding-top: 85px;
     width: 100%;
     margin-left: 0px;
@@ -22,6 +27,7 @@
     background-repeat: no-repeat;
     height: 525px;
 } .Recomend {
+    border: 1px solid rebeccapurple;
     padding-top: 60px;
     display: flex;
     align-items: end;
@@ -32,6 +38,8 @@
     border-bottom: 1px solid gray;
 }
 .Multiplay {
+    border: 1px solid rebeccapurple;
+    width: 100%;
     gap: 20px;
     margin-top: 24px;
     padding-bottom: 30px;

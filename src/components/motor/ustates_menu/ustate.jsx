@@ -25,8 +25,9 @@ const UstateComponent = () => {
                     <div className='menu-wrap'>
                     <div className='to-wrap1'><h3> {value.car.CarName}</h3> <h2>{value.car.Cost}</h2></div>
                     <div className='to-wrap'><h5  style={{color:"grey"}}>{value.car.BrandName}</h5><div><img src={stark} alt="stark" /><p>5.3</p></div></div>
-                    <div className='ww'>
-                      <button>Order</button><button>Camper</button></div>
+                     <div className='ww'>
+                      <button>Order</button><button>Camper</button>
+                     </div>
                     </div>
                 </Lengmenus>
 

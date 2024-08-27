@@ -74,7 +74,8 @@ function DatailCamping() {
       }
     ]
   };
-  return (<>
+  return (
+  <>
     <div className="slider-container">
       <Slider {...settings}>
         <div>
@@ -114,7 +115,6 @@ function DatailCamping() {
           <h3><img src={img12} alt="camping-img" /></h3>
         </div>
       </Slider>
-      
     </div>
     <CampCon>
         <div className="flexCon">
@@ -152,7 +152,7 @@ function DatailCamping() {
         <img src={map_img} alt="map-img" />
         </div>
     </CampCon>
-    </>
+  </>
   );
 }
 

@@ -13,7 +13,7 @@ import car9 from '../../assets/car9.jpg'
 import car10 from '../../assets/car10.jpg'
 import car11 from '../../assets/car11.jpg'
 import car12 from '../../assets/car12.webp'
-import but from '../../assets/button.png'
+import { MainCon } from "./mainStyle";
 
 export default function MainComponent() {
   var settings = {
@@ -29,17 +29,48 @@ export default function MainComponent() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },{
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      }
+    ]
   }
+
   return (
-    <>
+
+  <MainCon className="main_Con_wrap">
     <Slider {...settings} className="carusel">
       <div className="carusel_img"></div>
       <div className="carusel_img2"></div>
       <div className="carusel_img3"></div>
     </Slider>
    
-   <div>
+    <div>
    <div className="Recomend"><h2>Recomend</h2></div>
+
    <Slider {...settingsw} className="Multiplay">
 
      <div>
@@ -52,7 +83,6 @@ export default function MainComponent() {
         <h4>Choose a model</h4>
        </div>
      </div>
-
      <div>
        <div className="multiConWrap">
         <img src={car2} alt="" />
@@ -165,8 +195,9 @@ export default function MainComponent() {
      </div>
 
    </Slider>
-   </div>
-   </>
+    </div>
+  </MainCon>
+
       ); 
   }
 
