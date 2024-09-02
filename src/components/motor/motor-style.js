@@ -91,7 +91,7 @@ width: 250px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-gap: 18px;
+/* gap: 18px; */
 .leftMenu2{
     display: flex;
     margin-top: -90px;
@@ -113,7 +113,7 @@ gap: 18px;
 `;
 export const Leftmenus = styled.div`
 width: 240px;
-height: 155px;
+/* height: 155px; */
 display: flex;
 flex-direction: column;
 justify-content: flex-start;

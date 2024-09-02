@@ -185,7 +185,16 @@ display: flex;
     margin-top: 10px; 
     div {
     display: flex;
-    } 
+    align-items: center;
+    img {
+        width: 15px;
+    }
+    } h3 {
+        font-size: 18px;
+    } h2 {
+        font-size: 22px;
+        color: #006DAB;
+    }
 } 
 h5{
     display: flex;
@@ -193,10 +202,11 @@ h5{
 }
 .ww {
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     gap: 14px;
 } .to-wrap h2 {
     color: #006DAB;
+    font-size: 22px;
 }
 .ww button {
   width: 100%;

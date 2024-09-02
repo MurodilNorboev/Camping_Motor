@@ -186,6 +186,8 @@ export const Lengmenus = styled.div`
     margin-top: 10px; 
     div {
     display: flex;
+    align-items: center;
+    gap: 5px;
     } 
 } 
 h5{
@@ -194,10 +196,13 @@ h5{
 }
 .ww {
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     gap: 14px;
 } .to-wrap h2 {
     color: #006DAB;
+    font-size: 22px;
+} .to-wrap h3 {
+    font-size: 18px;
 }
 .ww button {
   width: 100%;

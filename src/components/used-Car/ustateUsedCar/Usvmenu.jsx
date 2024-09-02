@@ -19,7 +19,7 @@ const Usvmenu = () => {
                        <div className='Car0'><img src={value.car.img} alt="car-img" /></div>
                         <div className='menu-wrap'>
                         <div className='to-wrap'><h3> {value.car.CarName}</h3> <h2>{value.car.Cost}</h2></div>
-                        <div className='to-wrap'><h5>{value.car.BrandName}</h5> <div><img src={stark} alt="stark" /><p>5.3</p></div></div>
+                        <div className='to-wrap'><h5>{value.car.BrandName}</h5> <div><img src={stark} alt="stark" /><>5.3</></div></div>
                         <div className='ww'>
                           <button>Order</button><button>Camper</button>
                         </div>

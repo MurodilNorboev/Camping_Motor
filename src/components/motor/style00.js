@@ -61,12 +61,21 @@ box-shadow:
     padding-bottom: 5px;
 } .h5 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     color: var(--text, #373737);
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
     padding-bottom: 18px;
+    img {
+        width: 10px;
+        height: 10px;
+    } h4 {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
 } .bottom h4 {
     display: flex;
     gap: 3px;
@@ -75,7 +84,7 @@ box-shadow:
     font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
-    padding-bottom: 13px;
+    /* padding-bottom: 13px; */
 } .Button0 {
     display: flex;
     gap: 15px;
@@ -152,15 +161,21 @@ export const Lengmenus = styled.div`
     margin-top: 10px; 
     div {
     display: flex;
-    } 
+    } h3 {
+        font-size: 18px;
+    } h2 {
+        font-size: 22px;
+        color: #006DAB;
+    }
 }
 h5{
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
 }
 .ww {
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     gap: 14px;
 } .to-wrap h2 {
     color: #006DAB;
@@ -174,7 +189,7 @@ border: 1px solid var(--blue, #006DAB);
 background-color: white;
 color: #006DAB;
 cursor: pointer;
-margin-top: 13px;
+/* margin-top: 13px; */
 }
 .ww :hover{
     background-color:  #006DAB;
@@ -189,7 +204,7 @@ margin-top: 13px;
 @media only screen and (max-width: 700px){
     .menu-wrap {
     width: 250px;
-  }    border: 1px solid red;
+  }   
 }
 @media only screen and (max-width: 630px){
     .Car0 img{

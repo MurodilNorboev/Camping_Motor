@@ -9,7 +9,7 @@ background-color: #006DAB;
 display: flex;
 align-items: center;
 justify-content: center;
-
+z-index: 1;
 
  .footer-mini-con-0 {
     display: flex;

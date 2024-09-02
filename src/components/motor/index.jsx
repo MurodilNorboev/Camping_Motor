@@ -11,6 +11,7 @@ import icon2 from '../../assets/iconpastle.svg'
 import { ButtonA } from '../caravan/style01'
 import UstateComponent from './ustates_menu/ustate'
 import UstatetrumenuComponent from './ustates_menu/ustatetrumenu'
+import AccordionUsage from '../mainPage/pupob/pupopCon'
 
 const Motorcomponent = () => {
 
@@ -39,8 +40,8 @@ const Motorcomponent = () => {
       <MiniMidlCon className='MiniMidlCon'>
 
          <Leftmenu className='Leftmenu'>
-
-          <Leftmenus>
+<AccordionUsage />
+          {/* <Leftmenus>
             <div className='menus-Wrapper'>Cost of car</div>
             <div className='input-wrapper-1'>
             <div className='input-wrapper-2'> <label>from</label> <input/> </div>
@@ -56,6 +57,7 @@ const Motorcomponent = () => {
             <div><input type='checkbox'/> <label>escape</label></div>
             </div>
           </Leftmenus>
+
           <Leftmenus>
             <div className='menus-Wrapper'>Company</div>
             <div className='input-wrapper'>
@@ -63,6 +65,7 @@ const Motorcomponent = () => {
             <div><input type='checkbox'/> <label>Aidal</label></div>
             </div>
           </Leftmenus>
+
           <Leftmenus>
             <div className='menus-Wrapper'>License type</div>
             <div className='input-wrapper'>
@@ -71,6 +74,7 @@ const Motorcomponent = () => {
             <div> <input type='checkbox'/> <label>1.5 year</label></div>
             </div>
           </Leftmenus>
+
           <Leftmenus>
             <div className='menus-Wrapper'>Number of travelers</div>
             <div className='input-wrapper'>
@@ -79,6 +83,7 @@ const Motorcomponent = () => {
             <div>  <input type='checkbox'/> <label>5++</label></div>
             </div>
           </Leftmenus>
+
           <Leftmenus>
             <div className='menus-Wrapper'>Location</div>
             <div className='input-wrapper'>
@@ -87,13 +92,16 @@ const Motorcomponent = () => {
             <div> <input type='checkbox'/> <label>Pusan</label></div>
             </div>
           </Leftmenus>
+
           <Leftmenus>
           <div className="leftMenu1">
                 <div className="butwrap0"><ButtonA  $second>Cansel</ButtonA></div>
                 <div className="butwrap"><ButtonA >Search</ButtonA></div>
 
             </div>
-            </Leftmenus><div>
+            </Leftmenus>
+
+            <div>
             <div className="leftMenu2">
             <div className='Comparelang'>Compare</div>
             <div className='mini-car'>
@@ -102,7 +110,8 @@ const Motorcomponent = () => {
               <img src={miniImg3} alt='mini-img-car3' style={{width:"75px"}}/>
             </div>
             </div>
-            </div>
+            </div> */}
+
          </Leftmenu>
 
          <RightMenuWrapper>
@@ -145,7 +154,7 @@ const Motorcomponent = () => {
           </RightMenuWrapper>
 
       </MiniMidlCon>
-
+      {/* <div><CustomTabPanel /></div> */}
     </BigContainer>
   )
 }

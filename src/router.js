@@ -16,7 +16,17 @@ import LoginReg from './components/loginReg/LoginReg'
 import Navbard from './components/context/navbar'
 import Footer from './components/context/footer'
 import MainComponent from './components/mainPage/main'
-import { Box, CssBaseline, Experimental_CssVarsProvider } from '@mui/material'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CarteComponent from './components/cartFolder/carte'
+import VideoCon from './components/videospupop/videoCon'
+import Menus_Icon from './components/context/menuicon'
+
+
+
+
+
+
+
 
 
 
@@ -33,9 +43,14 @@ const LoginContainer = location.pathname === "/login" || location.pathname === "
   <Routes>
     
 
+
     <Route path='*' element={<NotFileComponent />}/>
 
     <Route path='/' element={<MainComponent />} />
+
+    <Route path='/carts' element={<CarteComponent />} />
+    <Route path='/videopupop' element={<VideoCon />} />
+    <Route path='/menu_icons' element={<Menus_Icon />} />
 
     <Route path='/login' element={<Login/>}/>
     <Route path='/loginReg' element={<LoginReg/>}/>
