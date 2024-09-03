@@ -14,7 +14,7 @@ padding: 33px;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-width: 68vmin;
+/* width: 68vmin; */
 max-height: 614px;
 border-radius: 20px;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);

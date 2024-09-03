@@ -11,7 +11,11 @@ export const campcar = {
             Cost: "98,000,000",
             company: "Aidal company",
             place: "12",
-            license: "License type"
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -21,6 +25,13 @@ export const campcar = {
             CarName: "C53Fa",
             BrandName: "Bürstner",
             Cost: "88,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -30,6 +41,13 @@ export const campcar = {
             CarName: "Happy Camper",
             BrandName: "Carado",
             Cost: "133,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -39,6 +57,13 @@ export const campcar = {
             CarName: "Rolling Retreat",
             BrandName: "Winnebago Industries",
             Cost: "93,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -48,6 +73,13 @@ export const campcar = {
             CarName: "The Long Haul",
             BrandName: "Laika",
             Cost: "123,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -57,6 +89,13 @@ export const campcar = {
             CarName: "Trailblazer",
             BrandName: "Auto-Sleepers",
             Cost: "88,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -66,6 +105,13 @@ export const campcar = {
             CarName: "Sunset Chaser",
             BrandName: "Chausson",
             Cost: "77,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -75,6 +121,13 @@ export const campcar = {
             CarName: "Class-C",
             BrandName: "Entegra Coach, Inc",
             Cost: "160,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -84,6 +137,13 @@ export const campcar = {
             CarName: "Camper Cruise-ader",
             BrandName: "Airstream",
             Cost: "130,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -93,6 +153,13 @@ export const campcar = {
             CarName: "Nomad's Nest",
             BrandName: "Dethleffs",
             Cost: "95,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -102,6 +169,13 @@ export const campcar = {
             CarName: "Wanderlust Wagon",
             BrandName: "Carthago",
             Cost: "76,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -111,6 +185,13 @@ export const campcar = {
             CarName: "Cabin Fever",
             BrandName: "Heartland",
             Cost: "59,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -120,6 +201,13 @@ export const campcar = {
             CarName: "Cabin Feverr",
             BrandName: "hor Motor Coach",
             Cost: "53,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -129,6 +217,13 @@ export const campcar = {
             CarName: "Freedom Finderr",
             BrandName: "Blucamp",
             Cost: "90,100,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -138,6 +233,13 @@ export const campcar = {
             CarName: "Name of the car",
             BrandName: "The Open Roadster",
             Cost: "89,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -147,6 +249,13 @@ export const campcar = {
             CarName: "Fifth Wheels ",
             BrandName: "Forest River",
             Cost: "180,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -156,6 +265,13 @@ export const campcar = {
             CarName: "w 218",
             BrandName: "Adria",
             Cost: "66,999,999",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -165,6 +281,13 @@ export const campcar = {
             CarName: "A class w 200",
             BrandName: "Benimar",
             Cost: "72,900,99",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -174,6 +297,13 @@ export const campcar = {
             CarName: "D 320",
             BrandName: "Elddis",
             Cost: "92,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
     {
@@ -183,6 +313,13 @@ export const campcar = {
             CarName: " Amg cls 53",
             BrandName: "ayco, Inc",
             Cost: "114,000,000",
+            company: "Aidal company",
+            place: "12",
+            license: "License type",
+            info: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            ID: "281",
+            Dates: "22.02.2022",
+            Viewed: "395"
         }
     },
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Box, Typography } from '@mui/material';
 import { Video_ConTainer } from './video';
-import car_img1 from '../../assets//img_main1.svg'
 
 const App = () => {
     const [openModalIndex, setOpenModalIndex] = useState(null);

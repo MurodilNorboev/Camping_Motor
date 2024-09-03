@@ -144,10 +144,7 @@ export default function AccordionUsage() {
        
         </AccordionDetails>
       </Accordion>
-
-
-
-     
+      
     </div>
   );
 }

@@ -72,6 +72,7 @@ const LoginContainer = location.pathname === "/login" || location.pathname === "
 
 
   </Routes>
+  
   {!LoginContainer && <Footer/>}
   </>
   )

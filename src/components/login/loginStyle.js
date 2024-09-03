@@ -13,7 +13,6 @@ padding: 33px;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-width: 68vmin;
 max-width: 500px;
 max-height: 614px;
 border-radius: 20px;
@@ -28,7 +27,6 @@ h2 {
     padding-top: 25px;
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
 } .loginis1 label {
     color: rgba(55, 55, 55, 0.80);
     font-family: "Open Sans";
@@ -44,6 +42,7 @@ h2 {
     background: rgba(55, 55, 55, 0.10);
 } 
 .loginis3 {
+
     padding-top: 15px;
     display: flex;
     width: 100%;
@@ -89,6 +88,7 @@ h2 {
 } 
 .loginis5 {
     margin-top: 25px;
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -102,7 +102,8 @@ h2 {
     font-size: 16px;
     font-weight: 700;
 } .lang {
-    width: 120px;
+    max-width: 120px;
+    width: 100%;
     border: 0.5px solid  rgba(55, 55, 55, 0.15);
 
 }
@@ -127,13 +128,21 @@ h2 {
     background-color: transparent;
     width: 59.5vmin;
     max-width: 434px;
-    height: 50px;
+    max-height: 50px;
+    height: 100vw;
+    /* width: 100vw;  */
     border-radius: 10px;
     font-size: 15px;
     font-weight: 700;
 } .loginis7 :hover {
     background: var(--blue, #005DAB);
     color: white;
+}
+@media only screen and (max-width: 1300px){
+    .LoginWrap {
+        padding: 0px;
+        margin: 0px;
+    }
 }
 `;
 

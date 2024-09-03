@@ -7,6 +7,7 @@ import CarInterior2 from '../../assets/datailimg2.svg';
 import CarInterior3 from '../../assets/datailimg3.svg';
 import CarInterior4 from '../../assets/datailimg4.svg';
 import CarInterior5 from '../../assets/datailimg5.svg';
+import LabTabs from '../tabsfolder/itompage';
 
 
 
@@ -133,6 +134,7 @@ const Datailmotor = () => {
      </div>
      </ImgWrapCon>
      </div>
+     <LabTabs />
     </DatailCon>
         </>
   )

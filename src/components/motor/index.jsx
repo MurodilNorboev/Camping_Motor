@@ -40,78 +40,7 @@ const Motorcomponent = () => {
       <MiniMidlCon className='MiniMidlCon'>
 
          <Leftmenu className='Leftmenu'>
-<AccordionUsage />
-          {/* <Leftmenus>
-            <div className='menus-Wrapper'>Cost of car</div>
-            <div className='input-wrapper-1'>
-            <div className='input-wrapper-2'> <label>from</label> <input/> </div>
-            <div className='input-wrapper-2'> <label>to</label> <input/> </div>
-            </div>
-          </Leftmenus>
-          
-          <Leftmenus>
-            <div className='menus-Wrapper'>Brand</div>
-            <div className='input-wrapper'>
-            <div><input type='checkbox'/><label> Aidal</label></div>
-            <div><input type='checkbox'/> <label>Knal</label></div>
-            <div><input type='checkbox'/> <label>escape</label></div>
-            </div>
-          </Leftmenus>
-
-          <Leftmenus>
-            <div className='menus-Wrapper'>Company</div>
-            <div className='input-wrapper'>
-            <div> <input type='checkbox'/> <label>escape</label></div>
-            <div><input type='checkbox'/> <label>Aidal</label></div>
-            </div>
-          </Leftmenus>
-
-          <Leftmenus>
-            <div className='menus-Wrapper'>License type</div>
-            <div className='input-wrapper'>
-            <div> <input type='checkbox'/> <label>1 year</label></div>
-            <div><input type='checkbox'/> <label>2 year</label></div>
-            <div> <input type='checkbox'/> <label>1.5 year</label></div>
-            </div>
-          </Leftmenus>
-
-          <Leftmenus>
-            <div className='menus-Wrapper'>Number of travelers</div>
-            <div className='input-wrapper'>
-            <div>  <input type='checkbox'/> <label>2</label></div>
-            <div>  <input type='checkbox'/> <label>3-4</label></div>
-            <div>  <input type='checkbox'/> <label>5++</label></div>
-            </div>
-          </Leftmenus>
-
-          <Leftmenus>
-            <div className='menus-Wrapper'>Location</div>
-            <div className='input-wrapper'>
-            <div> <input type='checkbox'/> <label>Seul</label></div>
-            <div><input type='checkbox'/> <label>Korea</label></div>
-            <div> <input type='checkbox'/> <label>Pusan</label></div>
-            </div>
-          </Leftmenus>
-
-          <Leftmenus>
-          <div className="leftMenu1">
-                <div className="butwrap0"><ButtonA  $second>Cansel</ButtonA></div>
-                <div className="butwrap"><ButtonA >Search</ButtonA></div>
-
-            </div>
-            </Leftmenus>
-
-            <div>
-            <div className="leftMenu2">
-            <div className='Comparelang'>Compare</div>
-            <div className='mini-car'>
-              <img src={miniImg1} alt='mini-img-car1' style={{width:"75px"}}/>
-              <img src={miniImg2} alt='mini-img-car2' style={{width:"75px"}}/>
-              <img src={miniImg3} alt='mini-img-car3' style={{width:"75px"}}/>
-            </div>
-            </div>
-            </div> */}
-
+             <AccordionUsage />
          </Leftmenu>
 
          <RightMenuWrapper>
