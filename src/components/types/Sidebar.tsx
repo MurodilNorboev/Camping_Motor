@@ -1,3 +1,7 @@
+
+
+
+
 import '../styles/styleCon.css'
 import GlobalStyles from '@mui/joy/GlobalStyles';
 import Avatar from '@mui/joy/Avatar';
@@ -22,9 +26,8 @@ import ColorSchemeToggle from './ColorSchemeToggle';
 import { closeSidebar } from '../types/utils';
 import { NavLink } from '../styles/style';
 
-
-
 export default function Sidebar() {
+
   return (
     <Sheet
       className="Sidebar"
@@ -105,7 +108,7 @@ export default function Sidebar() {
             '--ListItem-radius': (theme) => theme.vars.radius.sm,
           }}
         >
-          <NavLink to={"motor"} className='motor_wrap'>
+          <NavLink to={"motor"}>
             <ListItem>
             <ListItemButton>
             <DashboardRoundedIcon />
@@ -218,6 +221,8 @@ export default function Sidebar() {
         </List>
       </Box>
       <Divider />
+
+
       <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
         <Avatar
           variant="outlined"
@@ -232,7 +237,6 @@ export default function Sidebar() {
           <LogoutRoundedIcon />
         </IconButton>
       </Box>
-      {/* <iframe src="https://www.youtube.com/embed/BOF79TAIkYQ?si=zW-TRkYylJiQjCdu"></iframe> */}
     </Sheet>
   );
 }

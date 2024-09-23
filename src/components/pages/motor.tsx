@@ -31,7 +31,7 @@ const MotorComponent = () => {
           flexDirection: { xs: 'column', sm: 'row' },
           alignItems: { xs: 'start', sm: 'center' },
           flexWrap: 'wrap',
-          justifyContent: 'space-between',
+          justifyContent:'space-between',
         }}
       >
         <Typography level="h2" component="h1">
