@@ -1,16 +1,18 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import JoyOrderDashboardTemplate from './App';
 import RouterComponent from './components/router';
+import TestComponent from './components/test/name';
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <BrowserRouter>
     <RouterComponent />
+    {/* <TestComponent /> */}
   </BrowserRouter>
 );
 

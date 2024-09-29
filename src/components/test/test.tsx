@@ -21,6 +21,7 @@ function  riducer(state: CounterTtpe, action: ActionProps) {
     default : return state
   }
 }
+
 const Test = () => {
   const [state, dispatch] = useReducer(riducer, unitializerArg);
   return (

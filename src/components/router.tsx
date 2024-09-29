@@ -31,7 +31,6 @@ const RouterComponent = () => {
       <Route path='/register' element={<Register navigate={navigate} />} />
       <Route path='/' element={<JoyOrderDashboardTemplate isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
       <Route path='/*' element={<JoyOrderDashboardTemplate isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-       {/* <Route path='*' element={<ErrorComponent />} />  */}
     </Routes>
   );
 };

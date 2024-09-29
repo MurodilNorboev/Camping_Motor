@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './omaterialStile.css'; 
-import { caravanCar } from '../mock/caravandata';
+import { caravanCar, caravanCars } from '../mock/caravandata';
 import './omaterialStile.css'
 
 interface OmaterialProps {
@@ -10,7 +10,7 @@ interface OmaterialProps {
 
 const Omaterialcaravan: React.FC<OmaterialProps> = ({ onClose }) => {
   const { id } = useParams<{ id: string }>(); 
-  const selectedcaravan = caravanCar.find(caravan => caravan.id === Number(id));
+  const selectedcaravan = caravanCars.find(caravan => caravan.id === Number(id));
 
 
   if (!selectedcaravan) {
@@ -40,23 +40,32 @@ const Omaterialcaravan: React.FC<OmaterialProps> = ({ onClose }) => {
       }}
     >
       <div className='motor_wrap'> 
-        <h2>Motor Details</h2>
+        <h2>Caravan Details</h2>
       <div className='button_wrap'> 
       <button onClick={onClose}>Close</button>
       </div>
       </div>
-      <div className='content-container'>
-        <img src={selectedcaravan.img} alt={selectedcaravan.CarName} className="fade-in img_wraps" /> 
-     <div className="text fade-in" >
-     <p>Name: {selectedcaravan.CarName}</p>
-      <p>Brand: {selectedcaravan.BrandName}</p>
-      <p>Cost: {selectedcaravan.Cost}</p>
-      <p>Year: {selectedcaravan.Dates}</p>
-      <p>Location: {selectedcaravan.place}</p>
-      <p>Viewed: {selectedcaravan.Viewed}</p>
-      <p>Info: {selectedcaravan.info}</p>
-      </div>
-     </div>
+
+           <div className='content-container_wrap'>
+           <div className='content-container'>
+        <div className='img_wraps'>
+        <img src={selectedcaravan.img} alt={selectedcaravan.CarName} className="fade-in img_wraps" />
+        <p className='img_wraps_2'>Name: {selectedcaravan.CarName} Cost: {selectedcaravan.Cost}</p>
+        </div>
+        <div className="text fade-in">
+            <p>Brand: {selectedcaravan.BrandName}</p>
+            <p>Year: {selectedcaravan.Dates}</p>
+            <p>company: {selectedcaravan.company}</p>
+            <p>location: {selectedcaravan.place}</p>
+            <p>licese: {selectedcaravan.license}</p>
+            <p>yoqilgi: {selectedcaravan.fuelType}</p>
+            <p>karopkasi: {selectedcaravan.transmission}</p>
+            <p>info: {selectedcaravan.info}</p>
+            <p>rate: {selectedcaravan.fuelTankCapacity}</p>
+        </div>
+
+       </div>
+           </div>
     </div>
     </div>
   );

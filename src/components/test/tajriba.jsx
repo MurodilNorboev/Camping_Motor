@@ -1,8 +1,12 @@
+
+
+
 import { useReducer } from "react";
 
-const initialState = { count: 0 };
+const initialState = { count: 0 }; // count
 
-function reducer(state, action) {
+function reducer(state, action) { // reducer bor 
+  
   switch (action.type) {
     case "increment":
       return { count: state.count + action.payload };
@@ -10,14 +14,13 @@ function reducer(state, action) {
       return { count: state.count - action.payload };
     case "refresh":
       return { count: 0 };
-      
     default:
       return state; 
   }
 }
 
 const Tajriba = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState); // count bilan reducer 
 
   return (
     <div>

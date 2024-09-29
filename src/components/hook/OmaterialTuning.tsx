@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './omaterialStile.css'; 
-import { tuningCar } from '../mock/tuningdata';
+import { tuningCar, tuningCars } from '../mock/tuningdata';
 import './omaterialStile.css'; 
 
 interface OmaterialProps {
@@ -10,7 +10,7 @@ interface OmaterialProps {
 
 const Omaterialtuning: React.FC<OmaterialProps> = ({ onClose }) => {
   const { id } = useParams<{ id: string }>(); 
-  const selectedtuning = tuningCar.find(tuning => tuning.id === Number(id));
+  const selectedtuning = tuningCars.find(tuning => tuning.id === Number(id));
 
 
   if (!selectedtuning) {
@@ -40,23 +40,32 @@ const Omaterialtuning: React.FC<OmaterialProps> = ({ onClose }) => {
       }}
     >
       <div className='motor_wrap'> 
-        <h2>Motor Details</h2>
+        <h2>Tuning Details</h2>
       <div className='button_wrap'> 
       <button onClick={onClose}>Close</button>
       </div>
       </div>
-      <div className='content-container'>
-        <img src={selectedtuning.img} alt={selectedtuning.CarName} className="fade-in img_wraps" /> 
-     <div className="text fade-in" >
-     <p>Name: {selectedtuning.CarName}</p>
-      <p>Brand: {selectedtuning.BrandName}</p>
-      <p>Cost: {selectedtuning.Cost}</p>
-      <p>Year: {selectedtuning.Dates}</p>
-      <p>Location: {selectedtuning.place}</p>
-      <p>Viewed: {selectedtuning.Viewed}</p>
-      <p>Info: {selectedtuning.info}</p>
-      </div>
-     </div>
+
+           <div className='content-container_wrap'>
+           <div className='content-container'>
+        <div className='img_wraps'>
+        <img src={selectedtuning.img} alt={selectedtuning.CarName} className="fade-in img_wraps" />
+        <p className='img_wraps_2'>Name: {selectedtuning.CarName} Cost: {selectedtuning.Cost}</p>
+        </div>
+        <div className="text fade-in">
+            <p>Brand: {selectedtuning.BrandName}</p>
+            <p>Year: {selectedtuning.Dates}</p>
+            <p>company: {selectedtuning.company}</p>
+            <p>location: {selectedtuning.place}</p>
+            <p>licese: {selectedtuning.license}</p>
+            <p>yoqilgi: {selectedtuning.fuelType}</p>
+            <p>karopkasi: {selectedtuning.transmission}</p>
+            <p>info: {selectedtuning.info}</p>
+            <p>rate: {selectedtuning.fuelTankCapacity}</p>
+        </div>
+
+       </div>
+           </div>
     </div>
     </div>
   );

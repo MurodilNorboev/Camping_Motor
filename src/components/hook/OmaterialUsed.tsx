@@ -1,8 +1,8 @@
 import React, { useId } from 'react';
 import { useParams } from 'react-router-dom';
 import './omaterialStile.css'
-import { usedcarCar } from '../mock/usedCardata';
 import './omaterialStile.css'; 
+import { usedcarCars } from '../mock/usedCardata';
 
 interface OmaterialProps {
   onClose: () => void;
@@ -10,7 +10,7 @@ interface OmaterialProps {
 
 const OmaterialusedCar: React.FC<OmaterialProps> = ({ onClose }) => {
   const { id } = useParams<{ id: string }>();
-  const OmaterialusedCar = usedcarCar.find(used => used.id === Number(id));
+  const OmaterialusedCar = usedcarCars.find(used => used.id === Number(id));
 
   if (!OmaterialusedCar) {
     return <div>Data not found</div>;
@@ -39,23 +39,33 @@ const OmaterialusedCar: React.FC<OmaterialProps> = ({ onClose }) => {
       }}
     >
       <div className='motor_wrap'> 
-        <h2>Motor Details</h2>
+        <h2>Used Car Details</h2>
       <div className='button_wrap'> 
       <button onClick={onClose}>Close</button>
       </div>
       </div>
-      <div className='content-container'>
-        <img src={OmaterialusedCar.img} alt={OmaterialusedCar.CarName} className="fade-in img_wraps" /> 
-     <div className="text fade-in" >
-     <p>Name: {OmaterialusedCar.CarName}</p>
-      <p>Brand: {OmaterialusedCar.BrandName}</p>
-      <p>Cost: {OmaterialusedCar.Cost}</p>
-      <p>Year: {OmaterialusedCar.Dates}</p>
-      <p>Location: {OmaterialusedCar.place}</p>
-      <p>Viewed: {OmaterialusedCar.Viewed}</p>
-      <p>Info: {OmaterialusedCar.info}</p>
-      </div>
-     </div>
+
+      <div className='content-container_wrap'>
+           <div className='content-container'>
+        <div className='img_wraps'>
+        <img src={OmaterialusedCar.img} alt={OmaterialusedCar.CarName} className="fade-in img_wraps" />
+        <p className='img_wraps_2'>Name: {OmaterialusedCar.CarName} Cost: {OmaterialusedCar.Cost}</p>
+        </div>
+        <div className="text fade-in">
+            <p>Brand: {OmaterialusedCar.BrandName}</p>
+            <p>Year: {OmaterialusedCar.Dates}</p>
+            <p>company: {OmaterialusedCar.company}</p>
+            <p>location: {OmaterialusedCar.place}</p>
+            <p>licese: {OmaterialusedCar.license}</p>
+            <p>yoqilgi: {OmaterialusedCar.fuelType}</p>
+            <p>karopkasi: {OmaterialusedCar.transmission}</p>
+            <p>info: {OmaterialusedCar.info}</p>
+            <p>rate: {OmaterialusedCar.fuelTankCapacity}</p>
+        </div>
+
+       </div>
+           </div>
+
     </div>
     </div>
   );
