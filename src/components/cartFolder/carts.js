@@ -106,18 +106,6 @@ justify-content: center;
 } 
 `
 
-
-
-
-
-
-
-
-
-
-
-
-
 export const CartCon = styled.div`
 margin-top: 170px;
 width: 311px;

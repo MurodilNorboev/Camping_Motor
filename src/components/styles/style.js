@@ -136,6 +136,8 @@ flex: 0.5;
 export const Navbarlang = styled.div`
 display: flex;
 align-items: center;
+justify-content: center;
+gap: 5px;
 `;
 export const NavLink = styled(Link)`
 text-decoration:none;

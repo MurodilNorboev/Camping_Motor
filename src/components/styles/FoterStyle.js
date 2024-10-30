@@ -47,6 +47,10 @@ z-index: 1;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 400;
+    h3 {
+        font-size: 14px;
+        font-weight: 500;
+    }
 } .footer-mini-con-img {
     display: flex;
     gap: 2px;

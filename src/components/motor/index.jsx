@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
 import { Leftmenu, BigContainer, MiniMidlCon,  RightMenuWrapper, RightNavbar, Leftmenus,  NavbarMenul, } from './motor-style'
 import { Bacfon, Bacmenu } from './bacStyle'
-import miniImg1 from '../../assets/moto1.svg'
-import miniImg2 from '../../assets/moto2.svg'
-import miniImg3 from '../../assets/moto3.svg'
 import minimenu1 from '../../assets/menu1.svg'
 import minimenu2 from '../../assets/menu2.svg'
 import icon1 from '../../assets/iconpastle.svg'
 import icon2 from '../../assets/iconpastle.svg'
-import { ButtonA } from '../caravan/style01'
 import UstateComponent from './ustates_menu/ustate'
 import UstatetrumenuComponent from './ustates_menu/ustatetrumenu'
 import AccordionUsage from '../mainPage/pupob/pupopCon'
+import menu from '../../assets/menu-icon.svg'
+import TajribaComponent from '../context/sljsf'
+
+
 
 const Motorcomponent = () => {
+
+  const [open, setOpen] = useState(false);
+  const handleDrawerToggle = () => {
+    setOpen(!open);
+  };
 
   const [active, setActive] = useState(true);
 
@@ -48,6 +53,9 @@ const Motorcomponent = () => {
           <RightNavbar className='RightNavbar'> 
             
           <NavbarMenul className='NavbarMenul'>
+            <div>
+            <div className="Tajriba"><TajribaComponent  onClick={handleDrawerToggle} /></div>
+            </div>
             <div className='navbar-menus-1'><h2>Item</h2><h3>25.156</h3></div>
 
             <div  className='navbar-menus-7'>
@@ -58,6 +66,7 @@ const Motorcomponent = () => {
               </NavbarMenul>
               
             <div className='navbar-menus'>
+           
               <div className='navbar-menus-2'>
                 <h3>sort by</h3>
                 <input type='text' placeholder='Select'/> 
@@ -71,7 +80,6 @@ const Motorcomponent = () => {
               </div>
 
               <div  className='navbar-menus-4'>
-
                <div className='navbar-menus-9' onClick={handleClick}> <img src={minimenu1} alt='mini-menu1'/></div>
                <div className='navbar-menus-5' onClick={handleSetClick}> <img src={minimenu2} alt='mini-menu2'/></div>
 
@@ -83,7 +91,7 @@ const Motorcomponent = () => {
           </RightMenuWrapper>
 
       </MiniMidlCon>
-      {/* <div><CustomTabPanel /></div> */}
+      
     </BigContainer>
   )
 }

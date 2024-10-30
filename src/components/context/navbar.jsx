@@ -2,13 +2,11 @@
 import { Navbar, IconWrapper, Logowrapper,  MenuWrapper, NavLink, Navbarlang } from '../styles/style'
 import cart from '../../assets/cart.svg'
 import peopl from '../../assets/peopl.svg'
-import Iconpastle from '../../assets/iconpastle.svg'
-import menuIcon from '../../assets/menu-icon.svg'
 import { Link } from 'react-router-dom'
 import Menus_Icon from './menuicon'
-import { IconButton } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
 import { useState } from 'react'
+import MenuComponent from '../menu/menus'
+import Tajriba from '../folder_tajriba/tajriba'
 
 
 const  Navbard = () => {
@@ -20,9 +18,14 @@ const  Navbard = () => {
     <>
     <Navbar> 
 
-      <div className='to_wrapt'> <Logowrapper className='Logowrapper'>  
+      <div className='to_wrapt'> 
+
+        <Logowrapper className='Logowrapper'>  
           <Menus_Icon className="menu-Icon"/>
-           </Logowrapper> <Link to={'/'} style={{textDecoration:'none',color:'#006DAB'}}> <div className='logoerapper2'>Camper</div></Link></div>
+        </Logowrapper> 
+
+           <Link to={'/'} style={{textDecoration:'none',color:'#006DAB'}}> <div className='logoerapper2'>Camper</div></Link>
+      </div>
          
 
        
@@ -37,20 +40,28 @@ const  Navbard = () => {
             <NavLink to={"/camping-Plase"} style={{textDecoration:'none',color:'black'}}>   <div>Camping place</div>  </NavLink>
         </MenuWrapper>
 
-        <div className='right_menus'><img className='cart_img' src={cart}  alt='cart'/>
+        <div className='right_menus'>
+
+          <Link><img className='cart_img' src={cart}  alt='cart'/></Link>
+
               <Logowrapper className='Logowrapper3'>  
               <Menus_Icon className="menu-Icon"/>
-              </Logowrapper></div>
-              
+              </Logowrapper>
+
+        </div>
+             
         <IconWrapper className='IconWrapper'>
-            <img  src={cart}  alt='cart'/>
+
+            <div style={{border:'1p px solid red'}}><Tajriba/></div>
+
             <NavLink to={'/login'}  style={{textDecoration:'none',color:'black'}}>
             <div className='login'><img  src={peopl} alt='peopl' /></div>
             </NavLink>
 
             < Navbarlang>
-            En <img src={Iconpastle} alt='Icon'/>
+            En<MenuComponent />
             </Navbarlang>
+            
         </IconWrapper>
     </Navbar>
 
@@ -59,6 +70,6 @@ const  Navbard = () => {
 }
 
 export default Navbard
-
-
+// <img src={cart} alt="" />
+//<img  src={cart}  alt='cart'/>
 

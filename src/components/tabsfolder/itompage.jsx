@@ -10,26 +10,48 @@ import Contagpage from './contagpage';
 import { useParams } from 'react-router-dom';
 import { campcar } from '../mock/motor';
 import { Itm_Wrap, ItomCon } from './tabsStyle';
+import { blue } from '@mui/material/colors';
 
 export default function LabTabs() {
     const datailtabs = campcar.maindata;
-    console.log(datailtabs)
+    const kesish = datailtabs.slice(0, 6);
+    console.log(kesish)
 
   const [value, setValue] = React.useState('1');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
-    <Box sx={{ width: '100%', typography: 'body1' }}>
+    <Box sx={{ width: '100%', typography: 'body1' 
+     }}>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Box sx={{  background:'rgba(0, 109, 171, 0.20)',color:'black',paddingLeft:'97px' }}>
           <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Item One" value="1" />
-            <Tab label="Item Two" value="2" />
-            <Tab label="Item Three" value="3" />
-            <Tab label="Item four" value="4" />
+            <Tab label="Item reviews" value="1" sx={{
+               "&.Mui-selected": {
+                backgroundColor: "#006DAB",
+                color: "white",
+              },
+            }}/>
+            <Tab label="Q&A" value="2" sx={{
+               "&.Mui-selected": {
+                backgroundColor: "#006DAB",
+                color: "white",
+              },
+            }}/>
+            <Tab label="FAQ" value="3" sx={{
+               "&.Mui-selected": {
+                backgroundColor: "#006DAB",
+                color: "white",
+              },
+            }}/>
+            <Tab label="Contact" value="4" sx={{
+               "&.Mui-selected": {
+                backgroundColor: "#006DAB",
+                color: "white",
+              },
+            }}/>
           </TabList>
         </Box>
         <TabPanel value="1">
@@ -40,7 +62,7 @@ export default function LabTabs() {
                   <div><input type="text" placeholder='Best' /><img src="" alt="" /></div>
                  </div>
 
-                 {datailtabs.map((value, index) => {
+                 {kesish.map((value, index) => {
                     return(
                         <div key={index}>
                             <ItomCon>
@@ -63,6 +85,7 @@ export default function LabTabs() {
                  })}
             </Itm_Wrap>
             </TabPanel>
+
         <TabPanel value="2"><Q_apage /></TabPanel>
         <TabPanel value="3"><Faqpage /></TabPanel>
         <TabPanel value="4"><Contagpage /></TabPanel>

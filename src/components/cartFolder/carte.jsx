@@ -1,19 +1,13 @@
 import React from 'react'
 import { CartCon, CartConWraper, Namuna } from './carts'
 import Slider from 'react-slick';
-import car1 from '../../assets/car1.svg'
-import car2 from '../../assets/car2.svg'
-import car3 from '../../assets/car3.svg'
-import car4 from '../../assets/car4.svg'
-import car5 from '../../assets/car5.svg'
-import car6 from '../../assets/car6.svg'
 import { useParams } from 'react-router-dom';
 import { campcar } from '../mock/motor';
-import { CarMenus, DatailMenu } from '../styles/datail';
  
 const CarteComponent = () => { //datail_name
 const { id } = useParams();
 const datail_con = campcar.maindata;
+
 const datail_name = datail_con.filter((value) => value.id === parseInt(id));
 console.log(datail_name);
     const data = campcar.maindata;
@@ -55,9 +49,9 @@ console.log(datail_name);
                         )})}
                     </Slider>
                    </div>
-                 </div>
+                </div>
         
-            <div className='CartCon_wrape'>
+                <div className='CartCon_wrape'>
                 <CartCon className='CartCon'>
 
                     <div className="scrolWrap">
@@ -123,7 +117,7 @@ console.log(datail_name);
                     </div>
                     <div className='BtnWraps'><button>Place Order</button></div>
                 </CartCon>
-            </div>
+                </div>
 
     </CartConWraper>
     </>

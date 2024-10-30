@@ -60,6 +60,8 @@ export const MultiCon = styled.div`
     align-items: center;
     justify-content: center;
     button {
+        border-radius: none;
+        z-index: 1;
         margin-right: -22px;
         padding-right: 30px;
         border: none;

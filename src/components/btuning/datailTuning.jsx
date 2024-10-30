@@ -1,15 +1,14 @@
 import React from 'react'
-import { DatailConCaravan } from '../styles/caravanDatailStylE'
-import { Bacfon, Bacmenu, CarMenus, DatailMenu, ImgWrapCon } from '../styles/datail'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import CarInterior1 from '../../assets/datailimg1.svg';
 import CarInterior2 from '../../assets/datailimg2.svg';
 import CarInterior3 from '../../assets/datailimg3.svg';
 import CarInterior4 from '../../assets/datailimg4.svg';
 import CarInterior5 from '../../assets/datailimg5.svg';
-import { caravanCar } from '../mock/caravandata';
-import { DatailConTuning } from './datailstyle';
 import { tuningCar } from '../mock/tuningdata';
+
+import TuningTabs from '../tuningTabs/tuning_item';
+import { Bacfon, Bacmenu, CarMenus, DatailCon, DatailMenu, ImgWrapCon } from '../styles/datail';
 
 const DatailTuning = () => {
   const { id }  = useParams();
@@ -17,7 +16,7 @@ const DatailTuning = () => {
   const filterTuning = dataT.filter((value) => value.id === parseInt(id))
   console.log(filterTuning);
   return (
-    <DatailConTuning>
+    <DatailCon>
 
 
       <Bacfon className='bac-imgTuning'>
@@ -124,7 +123,7 @@ const DatailTuning = () => {
             <h2>Heating when driving</h2>
             <p>Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. <br />
             One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.</p>
-            <div className='ButWrap'> <button>ADD TO CART</button><button>COMPARE</button></div>
+            <div className='ButWrap'> <Link to={'/tuningCart'} style={{height:'0px',border:'none'}}><button>ADD TO CART</button></Link><button>COMPARE</button></div>
            </div>
            </div>
            </div>
@@ -134,8 +133,8 @@ const DatailTuning = () => {
      </div>
      </ImgWrapCon>
      </div>
-
-    </DatailConTuning>
+     <TuningTabs />
+    </DatailCon>
   )
 }
 

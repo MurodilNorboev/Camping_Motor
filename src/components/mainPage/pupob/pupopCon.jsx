@@ -5,25 +5,28 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
-import './pupopStyle.css'
+// import './pupopStyle.css'
 import { Leftmenus } from '../../motor/motor-style';
 import miniImg1 from '../../../assets/moto1.svg' //moto1.svg
 import miniImg2 from '../../../assets/moto2.svg'
 import miniImg3 from '../../../assets/moto3.svg'
-import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { LeftmenusContainer } from '../../caravan/leftmenus/leftmenusstyle';
 
 export default function AccordionUsage() {
   return (
-    <div className='leftmenu_wrap_con'>
+    < LeftmenusContainer className='leftmenu_wrap_con'>
 
-      <Accordion defaultExpanded className='Accordion'>
-        <AccordionSummary
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
+        <AccordionSummary  style={{marginLeft:'-15px'}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
           >
           Cost of car
         </AccordionSummary>
+        <hr style={{marginTop:"-5px"}}/>
+
         <AccordionDetails>
         <Leftmenus>
             <div className='input-wrapper-1'>
@@ -34,14 +37,15 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion defaultExpanded className='Accordion'>
-        <AccordionSummary
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
+        <AccordionSummary style={{marginLeft:'-15px'}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
           id="panel2-header"
         >
           Brand
         </AccordionSummary>
+        <hr style={{marginTop:"-5px"}}/>
         <AccordionDetails>
         <Leftmenus>
             <div className='input-wrapper'>
@@ -53,14 +57,15 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion defaultExpanded className='Accordion'>
-        <AccordionSummary
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
+        <AccordionSummary style={{marginLeft:'-15px'}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
           Company
         </AccordionSummary>
+        <hr style={{marginTop:"-5px"}}/>
         <AccordionDetails>
         <Leftmenus>
             <div className='input-wrapper'>
@@ -71,14 +76,15 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion defaultExpanded className='Accordion'>
-        <AccordionSummary
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
+        <AccordionSummary style={{marginLeft:'-15px'}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
           License type
         </AccordionSummary>
+        <hr style={{marginTop:"-5px"}}/>
         <AccordionDetails>
         <Leftmenus>
             <div className='input-wrapper'>
@@ -90,14 +96,15 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion defaultExpanded className='Accordion'>
-        <AccordionSummary
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
+        <AccordionSummary style={{marginLeft:'-15px'}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
           Number of travelers
         </AccordionSummary>
+        <hr style={{marginTop:"-5px"}}/>
         <AccordionDetails>
         <Leftmenus>
             <div className='input-wrapper'>
@@ -109,14 +116,15 @@ export default function AccordionUsage() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion defaultExpanded className='Accordion'>
-        <AccordionSummary className='Location'
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
+        <AccordionSummary style={{marginLeft:'-15px'}}
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
           Location
         </AccordionSummary>
+        <hr style={{marginTop:"-5px"}}/>
         <AccordionDetails>
         <Leftmenus>
             <div className='input-wrapper'>
@@ -131,8 +139,8 @@ export default function AccordionUsage() {
           <Button className='buttones1'>search</Button>
         </AccordionActions>
       </Accordion>
-
-      <Accordion defaultExpanded className='Accordion'>
+ 
+      <Accordion defaultExpanded className='Accordion' style={{boxShadow:"none"}}>
        <div>compare</div>
         <AccordionDetails>
        
@@ -143,9 +151,11 @@ export default function AccordionUsage() {
             </div>
        
         </AccordionDetails>
-      </Accordion>
+      </Accordion >
+
+      <div className='But_wrap'><Link to={"/modeles"} style={{height:'0px'}}><button className='BTN_Wrap'>compare</button></Link></div>
       
-    </div>
+    </ LeftmenusContainer>
   );
 }
 

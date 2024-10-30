@@ -1,10 +1,31 @@
-import React from 'react'
-import { ContagpageCon } from './tabsStyle'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+// import { Contagpage } from './tabsStyle'
 import img_map from '../../assets/map_img2.svg'
+import { ContagpageCon } from './tabsStyle';
+// import { Contagpage } from './tabsStyle'
 
 const Contagpage = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_98zbnkn', 'template_45x1f2l', form.current, {
+          publicKey: 'eW4Jh7S8w-fQtPnRO',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
   return (
-    <ContagpageCon>
+    <ContagpageCon> 
         <div className="left_map_Con">
             <div className="img_wrap_map">
                 <img src={img_map} alt="" />
@@ -21,13 +42,17 @@ const Contagpage = () => {
                 </div>
             </div>
         </div>
+       
             <div className="rightquestion">
              <h2>Have you got a question</h2>
-             <input type="text" className="name_text" placeholder='your name' />
-             <input type="text" className="email_text" placeholder='Your email' />
-             <input type="text" className="question_text" placeholder='Your question' />
-             <div className='btn_wrap_send'><button>Your question</button></div>
+             <form ref={form} onSubmit={sendEmail}>
+      <input type="text" name="user_name" placeholder='your name' className="name_text"/>
+      <input type="email" name="user_email" placeholder='Your email' className="emaile_text"/>
+      <textarea name="message" placeholder='Your question' className="question_text"/>
+      <div className='btn_wrap_send'><input type="submit" value="Your question" className="button"/></div>
+    </form>
         </div>
+       
     </ContagpageCon>
   )
 }

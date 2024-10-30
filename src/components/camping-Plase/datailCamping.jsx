@@ -20,7 +20,6 @@ import './camp.css'
 
 function DatailCamping() {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
@@ -36,7 +35,7 @@ function DatailCamping() {
           slidesToShow: 5,
           slidesToScroll: 5,
           infinite: true,
-          dots: true
+          
         }
       },
       {
@@ -45,7 +44,7 @@ function DatailCamping() {
           slidesToShow: 4,
           slidesToScroll: 4,
           infinite: true,
-          dots: true
+         
         }
       },
       {
@@ -54,7 +53,7 @@ function DatailCamping() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          
         }
       },
       {

@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Itm_Wrap = styled.div`
 display: flex;
 flex-direction: column;
-padding: 0px 0px 0px 95px;
+padding: 40px 0px 0px 95px;
 .text_wrap {
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ align-items: start;
 export const Contagpage = styled.div`
 padding-left: 95px;
 gap: 69px;
-margin-top: 40px;
+/* margin-top: 40px; */
 margin-bottom: 85px;
 display: flex;
 align-items: end;
@@ -78,13 +78,13 @@ align-items: end;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid gray;
-    padding-top: 25px;
+    padding-top: 24.5px;
     padding-left: 20px;
 }
 
 // rrightquestion
-.rightquestion {
-    padding: 0px 30px;
+.rightquestion { 
+    padding: 20px 30px 0px 30px;
     max-width: 450px;
     width: 100%;
     max-height: 432px;
@@ -95,19 +95,27 @@ align-items: end;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    form {
+        width: 100%;
+        max-height: 432px;
+        height: 100vmin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     .name_text {
         padding-left: 16px;
         /* max-width: 390px; */
         max-height: 50px;
-        height: 390px;
-        width: 100%;
         height: 100%;
+        width: 100%;
         border-radius: 8px;
         color: gray;
         background-color:  rgba(0,0,0,0.03);
         border: none;
     }
-    .email_text {
+    .emaile_text {
         padding-left: 16px;
         /* max-width: 390px; */
         max-height: 50px;
@@ -133,7 +141,7 @@ align-items: end;
     .btn_wrap_send {
         display: flex;
         width: 100%;
-        button {
+        .button {
             border: none;
             width: 100%;
             height: 50px;
@@ -182,7 +190,7 @@ gap: 50px;
 }
 // right
 .rightquestion {
-    padding: 0px 30px;
+    padding: 20px 30px 0px 30px;
     max-width: 450px;
     width: 100%;
     max-height: 432px;
@@ -193,6 +201,15 @@ gap: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    form {
+        width: 100%;
+        max-height: 432px;
+        height: 100vmin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     .name_text {
         padding-left: 16px;
         /* max-width: 390px; */
@@ -205,7 +222,7 @@ gap: 50px;
         background-color:  rgba(0,0,0,0.03);
         border: none;
     }
-    .email_text {
+    .emaile_text {
         padding-left: 16px;
         /* max-width: 390px; */
         max-height: 50px;
@@ -231,7 +248,7 @@ gap: 50px;
     .btn_wrap_send {
         display: flex;
         width: 100%;
-        button {
+        .button {
             border: none;
             width: 100%;
             height: 50px;
@@ -304,7 +321,7 @@ gap: 69px;
 }
 // right 
 .rightquestion {
-    padding: 0px 30px;
+    padding: 20px 30px 0px 30px;
     max-width: 450px;
     width: 100%;
     max-height: 432px;
@@ -315,6 +332,15 @@ gap: 69px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    form {
+        width: 100%;
+        max-height: 432px;
+        height: 100vmin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     .name_text {
         padding-left: 16px;
         /* max-width: 390px; */
@@ -327,7 +353,7 @@ gap: 69px;
         background-color:  rgba(0,0,0,0.03);
         border: none;
     }
-    .email_text {
+    .emaile_text {
         padding-left: 16px;
         /* max-width: 390px; */
         max-height: 50px;
@@ -353,7 +379,7 @@ gap: 69px;
     .btn_wrap_send {
         display: flex;
         width: 100%;
-        button {
+        .button {
             border: none;
             width: 100%;
             height: 50px;

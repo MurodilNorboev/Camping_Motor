@@ -16,6 +16,7 @@ import car10 from '../../../assets/car10.jpg'
 import car11 from '../../../assets/car11.jpg'
 import car12 from '../../../assets/car12.webp'
 import { MultiCon } from "./multiStyle";
+import { Button } from "@mui/material";
 
 export const  Responsive = ()=> {
   var settings = {
@@ -61,7 +62,7 @@ export const  Responsive = ()=> {
           <div className="box2">
             <img src={car1} alt="" />
             <h3>Knaus</h3>
-            <div className="Butwrap"><button>Discover the range</button></div>
+            <div className="Butwrap"><Button>Discover the range</Button></div>
             <h5>Choose a model <img src={pastle} alt="img-icon" /></h5>
           </div>
       </div>

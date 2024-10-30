@@ -1,13 +1,14 @@
 import React from 'react'
-import { DatailConUsedCar } from './usedCardatailStyle'
-import { Bacfon, Bacmenu, CarMenus, DatailMenu, ImgWrapCon } from '../styles/datail'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import CarInterior1 from '../../assets/datailimg1.svg';
 import CarInterior2 from '../../assets/datailimg2.svg';
 import CarInterior3 from '../../assets/datailimg3.svg';
 import CarInterior4 from '../../assets/datailimg4.svg';
 import CarInterior5 from '../../assets/datailimg5.svg';
 import { usedcarCar } from '../mock/usedCardata'
+import Used_carTabs from '../used_car_tabs/used_car_item';
+
+import { Bacfon, Bacmenu, CarMenus, DatailCon, DatailMenu, ImgWrapCon } from '../styles/datail';
 
 const UsedDatail = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const UsedDatail = () => {
   const filterused = dataU.filter((value) => value.id === parseInt(id));
   console.log(filterused);
   return (
-    <DatailConUsedCar>
+    <DatailCon>
 
       <Bacfon className='bac-imgUsed-Car'>
 
@@ -122,7 +123,7 @@ const UsedDatail = () => {
             <h2>Heating when driving</h2>
             <p>Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. <br />
             One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.</p>
-            <div className='ButWrap'> <button>ADD TO CART</button><button>COMPARE</button></div>
+            <div className='ButWrap'> <Link to={'/used_car_cart'} style={{height:'0px',border:'none'}}><button>ADD TO CART</button></Link><button>COMPARE</button></div>
            </div>
            </div>
            </div>
@@ -132,8 +133,8 @@ const UsedDatail = () => {
      </div>
      </ImgWrapCon>
      </div>
-
-    </DatailConUsedCar>
+     <Used_carTabs />
+    </DatailCon>
   )
 }
 

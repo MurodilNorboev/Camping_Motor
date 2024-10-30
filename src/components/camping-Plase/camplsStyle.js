@@ -42,6 +42,8 @@ font-weight: 600;
 color: #FFFFFF;
 }
 `;
+
+
 // Midl Wrap
 export const CampingCon = styled.div`
 display: grid;

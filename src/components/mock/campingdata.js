@@ -3,7 +3,7 @@ export const  campingimg = {
     mainCamping: [ {
         id: 1,
         campimg: {
-            img: "https://s3-alpha-sig.figma.com/img/bcdc/7ac3/547ce36a81871397d7838027781786d9?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IKneBrj6tLpGvsk9jtVQeRLj3BlCXzdf2pn9hxDYXuXmpZ7nCfoHh4tAVU8euDRRcayV9VywUP7enQGmYjtOPVh96yiLU4i0n4YI~u~PIAPTbAB4BFfEPUGUMyligj4EbVwbuoKZOwFzZQ3ag3lol4jCBJWkHeZSQmMQ7e19-NbahUvJ0Ji1EX12X--haPorLQdMh3JkShH4Wib86UxSDq8qEMGV0lDNf6Dm~z2NCish8FkSH3P0mIOZet0aCwb6UDsHxde9uvIhjqeF35abpaSEAfQWQoB7RByn~UtlIc0Z3JqMqB7Bncv7GVYdJntxt7oB9QwFOKdt2OoP9MDtTA__",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkArpSZcJQpSq8SlzMmua0WG8t2IE2e65HnQ&s",
             campingName: "Amazon Camping",
             location: "Korea, seul"
         } 
@@ -11,14 +11,14 @@ export const  campingimg = {
     {
         id: 2,
         campimg: {
-            img: "https://s3-alpha-sig.figma.com/img/0aa3/5524/99709ffad1a38fce36ce0bf7338a3c7e?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J~ht7Pjs4KiaH4cEzLhNTT5Aie9OqKLXY3GNque-UJGEy060-aItpsTlgwVZFakIqzs3Gvd0Zc6oYFBHqLGQBBA7XOIO1ibxGUA4Ve94u3GCTkd1T-Tu8n2UQ5mXqZtKbw2i1caoeQWHufGpZD3I0LHvd5MHN9Gqq3NT0g-Mig-f9uCZ7LQxgzjQMak34yyrU0KrtUzlDaw6HDOhUxkVPmtav59ZtWN7IVbSFvZFEK~XTdGwIDU8WBeymp1b1ESondWtghvZ3E~yVq09iboYjhRwgEdTRMD4h9eOnXBk9aQAC-ZqRPGWhSsUdwk1ip0x3U-rk9fN62zC2hMnQHOICg__",
+            img: "https://static.vecteezy.com/system/resources/previews/029/633/489/non_2x/family-vacation-travel-rv-holiday-trip-in-motorhome-caravan-car-vacation-beautiful-nature-norway-natural-landscape-free-photo.jpeg",
             campingName: "Frontcoutry Canping",
             location: "Korea, Dajon"
         } 
     },{
         id: 3,
         campimg: {
-            img: "https://s3-alpha-sig.figma.com/img/c0dd/2530/8118d88106d6bc06c2198c0b6efa0c26?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dgyuF2VBeb8bl9eE7f9fdUxznh1wudY9gi3tZ~LhlDcayjuy~rUGgtllt4ocFC2QHOI4mx0XtU9X1dISln1NMjU1FmQIBkSxNz2TnWHPc7aUKL7JMqlki9jDe9QiPralyd8U1nv~ZAp9Y7nMoZJb5nedQA4YHni487XNdgtpoDVO3AQYHK4bGMUNnF32rwWsUiPJvXjkVoeX2N2alpic78HNK2~OEEIXJmHik~BbUHTBbAjTqp4GCCtXw7P~G0SUiisnohznO45a3SCR5-4eJ0UMr3qycATb6HDSu7RnPsmZma9WB31ReBa1~wS5~G6YO6dPCuhP732g~odpodI41A__",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9BxV0REaOxUpjVBOSWN2oWOuqoZmmiUq3g&s",
             campingName: "Camping sports in victoria",
             location: "Korea, Pusan"
         } 

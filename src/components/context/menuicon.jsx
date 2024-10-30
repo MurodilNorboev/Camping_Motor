@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { Drawer, AppBar, Toolbar, IconButton, Typography, List, ListItem, useMediaQuery, useTheme } from '@mui/material';
+import { Drawer, Typography, List, ListItem, useMediaQuery, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import peopl from '../../assets/peopl.svg'
-import Iconpastle from '../../assets/iconpastle.svg'
 import cart from '../../assets/cart.svg'
-import { Navbarlang } from '../styles/style';
 
 function Menus_Icon() {
   const [open, setOpen] = useState(false);

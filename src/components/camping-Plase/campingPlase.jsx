@@ -1,7 +1,6 @@
 import React from 'react'
 import { BacmenuCamPles, CamPlaseCon, CampingCon } from './camplsStyle'
 import { Bacfon } from '../motor/bacStyle'
-import campingimg1 from '../../assets/CampingImg4.jpg'
 import { campingimg } from '../mock/campingdata'
 import { Link } from 'react-router-dom'
 

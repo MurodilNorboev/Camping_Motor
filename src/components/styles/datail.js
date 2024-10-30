@@ -56,13 +56,23 @@ flex-direction: column;
     } .ImgWrapCon {
         display: flex;
         flex-direction: column-reverse;
-        align-items: flex-start;
         justify-content: center;
+        align-items: center;
     } .ImgWrapCon1 {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-    } 
+        align-items: center;
+    } .Car0 {
+    width: 94vmin;
+    } .right-info2 {
+        max-width: 790px;
+    } .info1 {
+        max-width: 760px;
+        .ButWrap {
+            
+            max-width: 500px;
+        }
+    }
 }
 `;
 // car Menu Wrapper ((((((MEDIA))))))
@@ -73,7 +83,6 @@ export const CarMenus = styled.div`
     width: 100%;
     padding-bottom: 70px;
 .Car0 {
-    width: 94vmin;
     height: 381px;
     max-width: 790px;
 } .Car0 img {
@@ -171,26 +180,16 @@ margin-right: 20px;
 // car-information
 export const ImgWrapCon = styled.div`
 display: flex;
-align-items: center;
+align-items: start;
 justify-content: center;
-max-width: 791px;
 width: 100%;
 
 .right-info1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 99.9vmin;
     padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
 } .right-info2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    padding-bottom: 230px;
 } .right-info3 {
     display: flex;
     align-items: center;
@@ -212,15 +211,15 @@ width: 100%;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px; /* 150% */
 }
  .imgWrap {
     display: flex;
     align-items: center;
-    justify-content: center;
-} .imgWrap img { //46.5vw
-    width: 100.6vmin;
+    justify-content: center; 
     max-width: 790px;
+    width: 100%;
+} .imgWrap img {
+    width: 100%;
     display: flex;
     justify-content: center;
 }  button {
@@ -257,5 +256,5 @@ width: 100%;
 
 }
 `; 
-
+// border: 1px solid rebeccapurple;
 

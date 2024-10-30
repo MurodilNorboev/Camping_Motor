@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 export const BigContainer = styled.div`
 width: 100%;
-padding-top: 85.5px;
+padding-top: 87.5px;
 .footer-mini-con-img-2 {
     display: none;
 } .footer-mini-con-0-1 {
+    display: none;
+}
+.Tajriba {
     display: none;
 }
 `;
@@ -15,14 +18,17 @@ padding-top: 85.5px;
 export const MiniMidlCon = styled.div`
 display: flex;
 justify-content: center;
-gap: 50px;
-padding-top: 50px;
+gap: 70px;
+/* padding-top: 50px; */
 border: 1px solid green;
  .navbar-menus-7 div {
     display: none;
 } 
 
 @media only screen and (max-width: 1320px){
+    .Tajriba {
+    display: flex;
+}
     .MiniMidlCon {
         display: flex;
     } .Leftmenu {
@@ -87,7 +93,7 @@ height: 36px;
 `;
 export const Leftmenu = styled.div`
 
-width: 250px;
+width: 275px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -179,7 +185,7 @@ justify-content: flex-start;
 `;
 // menus wrapper
 export const RightMenuWrapper = styled.div`
-
+margin-top: 48px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -327,7 +333,7 @@ gap: 30px 30px;
 padding: 20px 0px;
 width: 100%;
 `;
-// ustate
+
 // export const RightNavbarRow = styled.div`
 // display: grid;
 // grid-template-areas: " i ";
