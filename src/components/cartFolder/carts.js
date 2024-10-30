@@ -73,7 +73,6 @@ justify-content: center;
 } .but_Wr :hover {
     background-color: rgba(55, 55, 55, 0.40);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
-    margin-top: -10px;
 } .img_wrap_filter {
     display: flex;
     border: 1px solid red;

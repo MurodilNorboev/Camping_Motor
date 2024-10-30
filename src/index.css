@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0cdeff798582792000d1bd5d7a374eb02764dfb2
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,6 +16,7 @@ code {
     monospace;
 }
 * {
+<<<<<<< HEAD
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -60,4 +64,9 @@ code {
 
 .assalom {
   border: 1px solid rgb(198, 224, 251) ;
+=======
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+>>>>>>> 0cdeff798582792000d1bd5d7a374eb02764dfb2
 }

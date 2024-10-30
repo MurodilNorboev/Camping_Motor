@@ -43,7 +43,7 @@ console.log(datail_name);
 
                                <div className='btu_wrap'>
                                  <img className='Car001' src={value.car.img} alt="car1"  /></div>
-                                 <div className="but_Wr"><button>Purchase price <h5>{value.car.Cost}</h5></button></div>
+                                 <div className="but_Wr"><button>Purchase price <h5  style={{boxShadow:"none"}}>{value.car.Cost}</h5></button></div>
                                </div>
                         
                         )})}
