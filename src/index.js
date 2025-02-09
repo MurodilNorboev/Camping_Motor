@@ -4,15 +4,6 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import RouterComponent from './router';
 
-
-
-
-
-
-
-
-
-
 export default RouterComponent
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
